@@ -1,0 +1,5604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rows>
+  <!--https://docs.oracle.com/en/database/oracle/application-express/18.2/aeapi/toc.htm-->
+  <!--APEX_APPLICATION.HELP Procedure-->
+  <row>
+    <key>help</key>
+    <value>apex_application.help (
+  p_request            => [null],
+  p_flow_id            => [null],
+  p_flow_step_id       => [null],
+  p_show_item_help     => '[YES]',
+  p_show_regions       => '[YES]',
+  p_before_page_html   => '[&lt;p>]',
+  p_after_page_html    => [null],
+  p_before_region_html => [null],
+  p_after_region_html  => '[&lt;/td>&lt;/tr>&lt;/table>&lt;/p>]',
+  p_before_prompt_html => '[&lt;p>&lt;b>]',
+  p_after_prompt_html  => '[&lt;/b>&lt;/p>:&amp;nbsp;]',
+  p_before_item_html   => [null],
+  p_after_item_html    => [null]
+);</value>
+  </row>
+  <!--APEX_APPLICATION.STOP_APEX_ENGINE Procedure-->
+  <row>
+    <key>stop_apex_engine</key>
+    <value>apex_application.stop_apex_engine;</value>
+  </row>
+  <!--APEX_ACL.ADD_USER_ROLE Procedure Signature 1-->
+  <row>
+    <key>add_user_role_id</key>
+    <value>apex_acl.add_user_role (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]',
+  p_role_id        => []
+);</value>
+  </row>
+  <!--APEX_ACL.ADD_USER_ROLE Procedure Signature 2-->
+  <row>
+    <key>add_user_role_static_id</key>
+    <value>apex_acl.add_user_role (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]',
+  p_role_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_ACL.HAS_USER_ANY_ROLES Function-->
+  <row>
+    <key>has_user_any_roles</key>
+    <value>apex_acl.has_user_any_roles (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => [wwv_flow.g_user]
+);</value>
+  </row>
+  <!--APEX_ACL.HAS_USER_ROLE Function-->
+  <row>
+    <key>has_user_role</key>
+    <value>apex_acl.has_user_role (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => [wwv_flow.g_user],
+  p_role_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_ACL.REMOVE_USER_ROLE Procedure Signature 1-->
+  <row>
+    <key>remove_user_role_id</key>
+    <value>apex_acl.remove_user_role (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]',
+  p_role_id        => []
+);</value>
+  </row>
+  <!--APEX_ACL.REMOVE_USER_ROLE Procedure Signature 2-->
+  <row>
+    <key>remove_user_role_static_id</key>
+    <value>apex_acl.remove_user_role (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]',
+  p_role_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_ACL.REPLACE_USER_ROLES Procedure Signature 1-->
+  <!--APEX_ACL.REPLACE_USER_ROLES Procedure Signature 2-->
+  <row>
+    <key>replace_user_roles</key>
+    <value>apex_acl.replace_user_roles (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]',
+  p_role_ids       => []
+);</value>
+  </row>
+  <!--APEX_ACL.REMOVE_ALL_USER_ROLES Procedure-->
+  <row>
+    <key>remove_all_user_roles</key>
+    <value>apex_acl.remove_all_user_roles (
+  p_application_id => [wwv_flow_security.g_flow_id],
+  p_user_name      => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.CLEAR_ALL Procedure-->
+  <row>
+    <key>clear_all</key>
+    <value>apex_application_install.clear_all;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GENERATE_APPLICATION_ID Procedure-->
+  <row>
+    <key>generate_application_id</key>
+    <value>apex_application_install.generate_application_id;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GENERATE_OFFSET Procedure-->
+  <row>
+    <key>generate_offset</key>
+    <value>apex_application_install.generate_offset;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_APPLICATION_ALIAS Function-->
+  <row>
+    <key>get_application_alias</key>
+    <value>apex_application_install.get_application_alias;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_APPLICATION_ID Function-->
+  <row>
+    <key>get_application_id</key>
+    <value>apex_application_install.get_application_id;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_APPLICATION_NAME Function-->
+  <row>
+    <key>get_application_name</key>
+    <value>apex_application_install.get_application_name;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_AUTO_INSTALL_SUP_OBJ Function-->
+  <row>
+    <key>get_auto_install_sup_obj</key>
+    <value>apex_application_install.get_auto_install_sup_obj;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_IMAGE_PREFIX Function-->
+  <row>
+    <key>get_image_prefix</key>
+    <value>apex_application_install.get_image_prefix;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_KEEP_SESSIONS Function-->
+  <row>
+    <key>get_keep_sessions</key>
+    <value>apex_application_install.get_keep_sessions;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_NO_PROXY_DOMAINS Function-->
+  <row>
+    <key>get_no_proxy_domains</key>
+    <value>apex_application_install.get_no_proxy_domains;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_OFFSET Function-->
+  <row>
+    <key>get_offset</key>
+    <value>apex_application_install.get_offset;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_PROXY Function-->
+  <row>
+    <key>get_proxy</key>
+    <value>apex_application_install.get_proxy;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_REMOTE_SERVER_BASE_URL Function-->
+  <row>
+    <key>get_remote_server_base_url</key>
+    <value>apex_application_install.get_remote_server_base_url (
+  p_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_REMOTE_SERVER_HTTPS_HOST Function-->
+  <row>
+    <key>get_remote_server_https_host</key>
+    <value>apex_application_install.get_remote_server_https_host (
+  p_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_SCHEMA Function-->
+  <row>
+    <key>get_schema</key>
+    <value>apex_application_install.get_schema;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.GET_WORKSPACE_ID Function-->
+  <row>
+    <key>get_workspace_id</key>
+    <value>apex_application_install.get_workspace_id;</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_APPLICATION_ALIAS Procedure-->
+  <row>
+    <key>set_application_alias</key>
+    <value>apex_application_install.set_application_alias (
+  p_application_alias => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_APPLICATION_ID Procedure-->
+  <row>
+    <key>set_application_id</key>
+    <value>apex_application_install.set_application_id (
+  p_application_id => []
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_APPLICATION_NAME Procedure-->
+  <row>
+    <key>set_application_name</key>
+    <value>apex_application_install.set_application_name (
+  p_application_name => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_AUTO_INSTALL_SUP_OBJ Procedure-->
+  <row>
+    <key>set_auto_install_sup_obj</key>
+    <value>apex_application_install.set_auto_install_sup_obj (
+  p_auto_install_sup_obj => []
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_IMAGE_PREFIX Procedure-->
+  <row>
+    <key>set_image_prefix</key>
+    <value>apex_application_install.set_image_prefix (
+  p_image_prefix => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_KEEP_SESSIONS Procedure-->
+  <row>
+    <key>set_keep_sessions</key>
+    <value>apex_application_install.set_keep_sessions (
+  p_keep_sessions => [false]
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_OFFSET Procedure-->
+  <row>
+    <key>set_offset</key>
+    <value>apex_application_install.set_offset (
+  p_offset => []
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_PROXY Procedure-->
+  <row>
+    <key>set_proxy</key>
+    <value>apex_application_install.set_proxy (
+  p_proxy            => '[]',
+  p_no_proxy_domains => [null]
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_REMOTE_SERVER Procedure-->
+  <row>
+    <key>set_remote_server</key>
+    <value>apex_application_install.set_remote_server (
+  p_static_id  => '[]',
+  p_base_url   => '[]',
+  p_https_host => [null]
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_SCHEMA Procedure-->
+  <row>
+    <key>set_schema</key>
+    <value>apex_application_install.set_schema (
+  p_schema => '[]'
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_WORKSPACE_ID Procedure-->
+  <row>
+    <key>set_workspace_id</key>
+    <value>apex_application_install.set_workspace_id (
+  p_workspace_id => []
+);</value>
+  </row>
+  <!--APEX_APPLICATION_INSTALL.SET_WORKSPACE Procedure-->
+  <row>
+    <key>set_workspace1</key>
+    <value>apex_application_install.set_workspace (
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.CALLBACK Procedure-->
+  <row>
+    <key>callback</key>
+    <value>apex_authentication.callback ( 
+  p_session_id      => [],
+  p_app_id          => [],
+  p_page_id         => [null],
+  p_ajax_identifier => '[]',
+  p_x01             => [null],
+  p_x02             => [null],
+  p_x03             => [null],
+  p_x04             => [null],
+  p_x05             => [null],
+  p_x06             => [null],
+  p_x07             => [null],
+  p_x08             => [null],
+  p_x09             => [null],
+  p_x10             => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.GET_CALLBACK_URL Function-->
+  <row>
+    <key>get_callback_url</key>
+    <value>apex_authentication.get_callback_url ( 
+  p_x01 => [null],
+  p_x02 => [null],
+  p_x03 => [null],
+  p_x04 => [null],
+  p_x05 => [null],
+  p_x06 => [null],
+  p_x07 => [null],
+  p_x08 => [null],
+  p_x09 => [null],
+  p_x10 => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.GET_LOGIN_USERNAME_COOKIE Function-->
+  <row>
+    <key>get_login_username_cookie</key>
+    <value>apex_authentication.get_login_username_cookie (
+  p_cookie_name => [apex_authentication.c_default_username_cookie]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.IS_AUTHENTICATED Function-->
+  <row>
+    <key>is_authenticated</key>
+    <value>apex_authentication.is_authenticated;</value>
+  </row>
+  <!--APEX_AUTHENTICATION.IS_PUBLIC_USER Function-->
+  <row>
+    <key>is_public_user</key>
+    <value>apex_authentication.is_public_user;</value>
+  </row>
+  <!--APEX_AUTHENTICATION.LOGIN Procedure-->
+  <row>
+    <key>login1</key>
+    <value>apex_authentication.login (
+  p_username           => '[]',
+  p_password           => '[]',
+  p_uppercase_username => [true]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.LOGOUT Procedure-->
+  <row>
+    <key>logout</key>
+    <value>apex_authentication.logout (
+  p_session_id => [],
+  p_app_id     => [],
+  p_ws_app_id  => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.POST_LOGIN Procedure-->
+  <row>
+    <key>post_login1</key>
+    <value>apex_authentication.post_login (
+  p_username           => '[]',
+  p_password           => '[]',
+  p_uppercase_username => [true]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.SEND_LOGIN_USERNAME_COOKIE Procedure-->
+  <row>
+    <key>send_login_username_cookie</key>
+    <value>apex_authentication.send_login_username_cookie (
+  p_username    => '[]'
+  p_cookie_name => [apex_authentication.c_default_username_cookie],
+  p_consent     => [false]
+);</value>
+  </row>
+  <!--APEX_AUTHORIZATION.ENABLE_DYNAMIC_GROUPS Procedure-->
+  <row>
+    <key>enable_dynamic_groups</key>
+    <value>apex_authorization.enable_dynamic_groups (
+  p_group_names => apex_t_varchar2('[]')
+);</value>
+  </row>
+  <!--APEX_AUTHORIZATION.IS_AUTHORIZED Function-->
+  <row>
+    <key>is_authorized</key>
+    <value>apex_authorization.is_authorized (
+  p_authorization_name => '[]'
+);</value>
+  </row>
+  <!--APEX_AUTHORIZATION.RESET_CACHE Procedure-->
+  <row>
+    <key>reset_cache</key>
+    <value>apex_authorization.reset_cache;</value>
+  </row>
+  <!--APEX_APP_SETTING.SET_VALUE Procedure-->
+  <row>
+    <key>set_value</key>
+    <value>apex_app_setting.set_value (
+  p_name  => '[]',
+  p_value => '[]'
+);</value>
+  </row>
+  <!--APEX_APP_SETTING.GET_VALUE Function-->
+  <row>
+    <key>get_value1</key>
+    <value>apex_app_setting.get_value (
+  p_name  => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.ADD_MEMBER Procedure-->
+  <!--APEX_COLLECTION.ADD_MEMBER Function-->
+  <row>
+    <key>add_member</key>
+    <value>apex_collection.add_member (
+  p_collection_name => '[]',
+  p_c001            => [null],
+  ...
+  p_c050            => [null],
+  p_n001            => [null],
+  ...
+  p_n005            => [null],
+  p_d001            => [null],
+  ...
+  p_d005            => [null],
+  p_clob001         => [empty_clob()],
+  p_blob001         => [empty_blob()],
+  p_xmltype001      => [null],
+  p_generate_md5    => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.ADD_MEMBERS Procedure-->
+  <row>
+    <key>add_members</key>
+    <value>apex_collection.add_members (
+  p_collection_name => '[]',
+  p_c001            => [empty_vc_arr],
+  ...
+  p_c050            => [empty_vc_arr],
+  p_n001            => [empty_n_arr],
+  ...
+  p_n005            => [empty_n_arr],
+  p_d001            => [empty_d_arr],
+  ...
+  p_d005            => [empty_d_arr],
+  p_generate_md5    => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.COLLECTION_EXISTS Function-->
+  <row>
+    <key>collection_exists</key>
+    <value>apex_collection.collection_exists (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.COLLECTION_HAS_CHANGED Function-->
+  <row>
+    <key>collection_has_changed</key>
+    <value>apex_collection.collection_has_changed (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.COLLECTION_MEMBER_COUNT Function-->
+  <row>
+    <key>collection_member_count</key>
+    <value>apex_collection.collection_member_count (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION Procedure-->
+  <row>
+    <key>create_collection</key>
+    <value>apex_collection.create_collection (
+  p_collection_name    => '[]',
+  p_truncate_if_exists => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_OR_TRUNCATE_COLLECTION Procedure-->
+  <row>
+    <key>create_or_truncate_collection</key>
+    <value>apex_collection.create_or_truncate_collection (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERY Procedure-->
+  <row>
+    <key>create_collection_from_query</key>
+    <value>apex_collection.create_collection_from_query (
+  p_collection_name    => '[]',
+  p_query              => '[]',
+  p_generate_md5       => '[NO]',
+  p_truncate_if_exists => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERY2 Procedure-->
+  <row>
+    <key>create_collection_from_query2</key>
+    <value>apex_collection.create_collection_from_query2 (
+  p_collection_name    => '[]',
+  p_query              => '[]',
+  p_generate_md5       => '[NO]',
+  p_truncate_if_exists => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERY_B Procedure-->
+  <row>
+    <key>create_collection_from_query_b1</key>
+    <value>apex_collection.create_collection_from_query_b (
+  p_collection_name    => '[]',
+  p_query              => '[]',
+  p_names              => apex_util.string_to_table('[]'),
+  p_values             => apex_util.string_to_table('[]'),
+  p_max_row_count      => [null],
+  p_truncate_if_exists => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERY_B Procedure (NO BIND VERSION)-->
+  <row>
+    <key>create_collection_from_query_b2</key>
+    <value>apex_collection.create_collection_from_query_b (
+  p_collection_name => '[]',
+  p_query           => '[]',
+  p_max_row_count   => [null]
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERYB2 Procedure-->
+  <row>
+    <key>create_collection_from_queryb21</key>
+    <value>apex_collection.create_collection_from_queryb2 (
+  p_collection_name    => '[]',
+  p_query              => '[]',
+  p_names              => apex_util.string_to_table('[]'),
+  p_values             => apex_util.string_to_table('[]'),
+  p_max_row_count      => [null],
+  p_truncate_if_exists => '[NO]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.CREATE_COLLECTION_FROM_QUERYB2 Procedure (NO BIND VERSION)-->
+  <row>
+    <key>create_collection_from_queryb22</key>
+    <value>apex_collection.create_collection_from_queryb2 (
+  p_collection_name => '[]',
+  p_query           => '[]',
+  p_max_row_count   => [null]
+);</value>
+  </row>
+  <!--APEX_COLLECTION.DELETE_ALL_COLLECTIONS Procedure-->
+  <row>
+    <key>delete_all_collections</key>
+    <value>apex_collection.delete_all_collections;</value>
+  </row>
+  <!--APEX_COLLECTION.DELETE_ALL_COLLECTIONS_SESSION Procedure-->
+  <row>
+    <key>delete_all_collections_session</key>
+    <value>apex_collection.delete_all_collections_session;</value>
+  </row>
+  <!--APEX_COLLECTION.DELETE_COLLECTION Procedure-->
+  <row>
+    <key>delete_collection</key>
+    <value>apex_collection.delete_collection (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.DELETE_MEMBER Procedure-->
+  <row>
+    <key>delete_member</key>
+    <value>apex_collection.delete_member (
+  p_collection_name => '[]',
+  p_seq             => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.DELETE_MEMBERS Procedure-->
+  <row>
+    <key>delete_members</key>
+    <value>apex_collection.delete_members (
+  p_collection_name => '[]',
+  p_attr_number     => '[]',
+  p_attr_value      => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.GET_MEMBER_MD5 Function-->
+  <row>
+    <key>get_member_md5</key>
+    <value>apex_collection.get_member_md5 (
+  p_collection_name => '[]',
+  p_seq             => []
+);</value>
+  </row>
+  <!--APEX_COLLECTION.MERGE_MEMBERS Procedure-->
+  <row>
+    <key>merge_members</key>
+    <value>apex_collection.merge_members (
+  p_collection_name => '[]',
+  p_seq             => [empty_vc_arr],
+  p_c001            => [empty_vc_arr],
+  ...
+  p_c050            => [empty_vc_arr],
+  p_null_index      => [1],
+  p_null_value      => [null],
+  p_init_query      => [null]
+);</value>
+  </row>
+  <!--APEX_COLLECTION.MOVE_MEMBER_DOWN Procedure-->
+  <row>
+    <key>move_member_down</key>
+    <value>apex_collection.move_member_down (
+  p_collection_name => '[]',
+  p_seq             => []
+);</value>
+  </row>
+  <!--APEX_COLLECTION.MOVE_MEMBER_UP Procedure-->
+  <row>
+    <key>move_member_up</key>
+    <value>apex_collection.move_member_up (
+  p_collection_name => '[]',
+  p_seq             => []
+);</value>
+  </row>
+  <!--APEX_COLLECTION.RESEQUENCE_COLLECTION Procedure-->
+  <row>
+    <key>resequence_collection</key>
+    <value>apex_collection.resequence_collection (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.RESET_COLLECTION_CHANGED Procedure-->
+  <row>
+    <key>reset_collection_changed</key>
+    <value>apex_collection.reset_collection_changed (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.RESET_COLLECTION_CHANGED_ALL Procedure-->
+  <row>
+    <key>reset_collection_changed_all</key>
+    <value>apex_collection.reset_collection_changed_all;</value>
+  </row>
+  <!--APEX_COLLECTION.SORT_MEMBERS Procedure-->
+  <row>
+    <key>sort_members</key>
+    <value>apex_collection.sort_members (
+  p_collection_name       => '[]',
+  p_sort_on_column_number => []
+);</value>
+  </row>
+  <!--APEX_COLLECTION.TRUNCATE_COLLECTION Procedure-->
+  <row>
+    <key>truncate_collection</key>
+    <value>apex_collection.truncate_collection (
+  p_collection_name => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER Procedure-->
+  <row>
+    <key>update_member</key>
+    <value>apex_collection.update_member (
+  p_collection_name => '[]',
+  p_c001            => [null],
+  ...
+  p_c050            => [null],
+  p_n001            => [null],
+  ...
+  p_n005            => [null],
+  p_d001            => [null],
+  ...
+  p_d005            => [null],
+  p_clob001         => [empty_clob()],
+  p_blob001         => [empty_blob()],
+  p_xmltype001      => [null]
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBERS Procedure-->
+  <row>
+    <key>update_members</key>
+    <value>apex_collection.update_members (
+  p_collection_name => '[]',
+  p_seq             => [empty_vc_arr],
+  p_c001            => [empty_vc_arr],
+  ...
+  p_c050            => [empty_vc_arr],
+  p_n001            => [empty_n_arr],
+  ...
+  p_n005            => [empty_n_arr],
+  p_d001            => [empty_d_arr],
+  ...
+  p_d005            => [empty_d_arr]
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 1-->
+  <row>
+    <key>update_member_attribute1</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_attr_number     => [],
+  p_attr_value      => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 2-->
+  <row>
+    <key>update_member_attribute2</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_clob_number     => [],
+  p_clob_value      => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 3-->
+  <row>
+    <key>update_member_attribute3</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_blob_number     => [],
+  p_blob_value      => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 4-->
+  <row>
+    <key>update_member_attribute4</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_xmltype_number  => [],
+  p_xmltype_value   => '[]'
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 5-->
+  <row>
+    <key>update_member_attribute5</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_attr_number     => [],
+  p_number_value    => []
+);</value>
+  </row>
+  <!--APEX_COLLECTION.UPDATE_MEMBER_ATTRIBUTE Procedure Signature 6-->
+  <row>
+    <key>update_member_attribute6</key>
+    <value>apex_collection.update_member_attribute (
+  p_collection_name => '[]',
+  p_seq             => [],
+  p_attr_number     => [],
+  p_date_value      => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.CLEAR_TOKENS Procedure-->
+  <row>
+    <key>clear_tokens</key>
+    <value>apex_credential.clear_tokens (
+  p_credential_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_PERSISTENT_CREDETIALS Procedure Signature 1-->
+  <row>
+    <key>set_persistent_credetials1</key>
+    <value>apex_credential.set_persistent_credetials (
+  p_credential_static_id => '[]',
+  p_client_id            => '[]',
+  p_client_secret        => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_PERSISTENT_CREDETIALS Procedure Signature 2-->
+  <row>
+    <key>set_persistent_credetials2</key>
+    <value>apex_credential.set_persistent_credetials (
+  p_credential_static_id => '[]',
+  p_username             => '[]',
+  p_password             => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_PERSISTENT_TOKEN Procedure-->
+  <row>
+    <key>set_persistent_token</key>
+    <value>apex_credential.set_persistent_token (
+  p_credential_static_id => '[]',
+  p_token_type           => apex_credential.c_token_[], /*c_token_access, c_token_refresh, c_token_id*/
+  p_token_value          => '[]',
+  p_token_expires        => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_SESSION_CREDENTIALS Procedure Signature 1-->
+  <row>
+    <key>set_session_credentials1</key>
+    <value>apex_credential.set_session_credentials (
+  p_credential_static_id => '[]',
+  p_username             => '[]',
+  p_password             => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_SESSION_CREDENTIALS Procedure Signature 2-->
+  <row>
+    <key>set_session_credentials2</key>
+    <value>apex_credential.set_session_credentials (
+  p_credential_static_id => '[]',
+  p_client_id            => '[]',
+  p_client_secret        => '[]'
+);</value>
+  </row>
+  <!--APEX_CREDENTIAL.SET_SESSION_TOKEN Procedure-->
+  <row>
+    <key>set_session_token</key>
+    <value>apex_credential.set_session_token (
+  p_credential_static_id => '[]',
+  p_token_type           => apex_credential.c_token_[], /*c_token_access, c_token_refresh, c_token_id*/
+  p_token_value          => '[]',
+  p_token_expires        => '[]'
+);</value>
+  </row>
+  <!--APEX_CSS.ADD Procedure-->
+  <row>
+    <key>add</key>
+    <value>apex_css.add (
+  p_css => '[]',
+  p_key => [null]
+);</value>
+  </row>
+  <!--APEX_CSS.ADD_3RD_PARTY_LIBRARY_FILE Procedure-->
+  <row>
+    <key>add_3rd_party_library_file1</key>
+    <value>apex_css.add_3rd_party_library_file (
+  p_library     => apex_css.c_library_[], /*c_library_jquery, c_library_jquery_ui, c_library_jquery_mobile*/
+  p_file_name   => '[]',
+  p_directory   => [null],
+  p_version     => [null],
+  p_media_query => [null]
+);</value>
+  </row>
+  <!--APEX_CSS.ADD_FILE Procedure-->
+  <row>
+    <key>add_file1</key>
+    <value>apex_css.add_file (
+  p_name           => '[]',
+  p_directory      => [apex.g_image_prefix||'css/'],
+  p_version        => [null],
+  p_skip_extension => [false],
+  p_media_query    => [null],
+  p_ie_condition   => [null]
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.APPLICATION_PAGE_ITEM_EXISTS Function-->
+  <row>
+    <key>application_page_item_exists</key>
+    <value>apex_custom_auth.application_page_item_exists (
+  p_item_name => '[]'
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.CURRENT_PAGE_IS_PUBLIC Function-->
+  <row>
+    <key>current_page_is_public</key>
+    <value>apex_custom_auth.current_page_is_public;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.DEFINE_USER_SESSION Procedure-->
+  <row>
+    <key>define_user_session</key>
+    <value>apex_custom_auth.define_user_session (
+  p_user       => '[]',
+  p_session_id => [apex_custom_auth.get_next_session_id]
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_COOKIE_PROPS Procedure-->
+  <row>
+    <key>get_cookie_props</key>
+    <value>apex_custom_auth.get_cookie_props (
+  p_app_id        => [],
+  p_cookie_name   => [],
+  p_cookie_path   => [],
+  p_cookie_domain => [],
+  p_secure        => []
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_LDAP_PROPS Procedure-->
+  <row>
+    <key>get_ldap_props</key>
+    <value>apex_custom_auth.get_ldap_props (
+  p_ldap_host          => [],
+  p_ldap_port          => [],
+  p_use_ssl            => [],
+  p_use_exact_dn       => [],
+  p_search_filter      => [],
+  p_ldap_dn            => [],
+  p_ldap_edit_function => []
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_NEXT_SESSION_ID Function-->
+  <row>
+    <key>get_next_session_id</key>
+    <value>apex_custom_auth.get_next_session_id;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_SECURITY_GROUP_ID Function-->
+  <row>
+    <key>get_security_group_id</key>
+    <value>apex_custom_auth.get_security_group_id;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_SESSION_ID Function-->
+  <row>
+    <key>get_session_id</key>
+    <value>apex_custom_auth.get_session_id;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_SESSION_ID_FROM_COOKIE Function-->
+  <row>
+    <key>get_session_id_from_cookie</key>
+    <value>apex_custom_auth.get_session_id_from_cookie;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_USER Function-->
+  <row>
+    <key>get_user</key>
+    <value>apex_custom_auth.get_user;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.GET_USERNAME Function-->
+  <row>
+    <key>get_username1</key>
+    <value>apex_custom_auth.get_username;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.IS_SESSION_VALID Function-->
+  <row>
+    <key>is_session_valid</key>
+    <value>apex_custom_auth.is_session_valid;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.LOGIN Procedure-->
+  <row>
+    <key>login2</key>
+    <value>apex_custom_auth.login (
+  p_uname         => [null],
+  p_password      => [null],
+  p_session_id    => [null],
+  p_app_page      => [null],
+  p_entry_point   => [null],
+  p_preserve_case => [false]
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.POST_LOGIN Procedure-->
+  <row>
+    <key>post_login2</key>
+    <value>apex_custom_auth.post_login (
+  p_uname         => [null],
+  p_session_id    => [null],
+  p_app_page      => [null],
+  p_preserve_case => [false]
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.SESSION_ID_EXISTS Function-->
+  <row>
+    <key>session_id_exists</key>
+    <value>apex_custom_auth.session_id_exists;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.SET_SESSION_ID Procedure-->
+  <row>
+    <key>set_session_id</key>
+    <value>apex_custom_auth.set_session_id (
+  p_session_id => []
+);</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.SET_SESSION_ID_TO_NEXT_VALUE Procedure-->
+  <row>
+    <key>set_session_id_to_next_value</key>
+    <value>apex_custom_auth.set_session_id_to_next_value;</value>
+  </row>
+  <!--APEX_CUSTOM_AUTH.SET_USER Procedure-->
+  <row>
+    <key>set_user</key>
+    <value>apex_custom_auth.set_user (
+  p_user => '[]'
+);</value>
+  </row>
+  <!--APEX_DEBUG.DISABLE Procedure-->
+  <row>
+    <key>disable</key>
+    <value>apex_debug.disable;</value>
+  </row>
+  <!--APEX_DEBUG.DISABLE_DBMS_OUTPUT Procedure-->
+  <row>
+    <key>disable_dbms_output</key>
+    <value>apex_debug.disable_dbms_output;</value>
+  </row>
+  <!--APEX_DEBUG.ENABLE Procedure-->
+  <row>
+    <key>enable</key>
+    <value>apex_debug.enable (
+  p_level => [apex_debug.c_log_level_info]
+);</value>
+  </row>
+  <!--APEX_DEBUG.ENTER Procedure-->
+  <row>
+    <key>enter</key>
+    <value>apex_debug.enter (
+  p_routine_name     => '[]',
+  p_name01           => [null],
+  p_value01          => [null],
+  ...
+  p_name10           => [null],
+  p_value10          => [null],
+  p_value_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_DEBUG.ENABLE_DBMS_OUTPUT Procedure-->
+  <row>
+    <key>enable_dbms_output</key>
+    <value>apex_debug.enable_dbms_output (
+  p_prefix => '[# APEX|]'
+);</value>
+  </row>
+  <!--APEX_DEBUG.ERROR Procedure-->
+  <row>
+    <key>error</key>
+    <value>apex_debug.error (
+  p_message    => '[]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p5           => [null],
+  p6           => [null],
+  p7           => [null],
+  p8           => [null],
+  p9           => [null],
+  p_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_DEBUG.INFO Procedure-->
+  <row>
+    <key>info</key>
+    <value>apex_debug.info (
+  p_message    => '[]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p5           => [null],
+  p6           => [null],
+  p7           => [null],
+  p8           => [null],
+  p9           => [null],
+  p_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_DEBUG.LOG_DBMS_OUTPUT Procedure-->
+  <row>
+    <key>log_dbms_output</key>
+    <value>apex_debug.log_dbms_output;</value>
+  </row>
+  <!--APEX_DEBUG.LOG_LONG_MESSAGE Procedure-->
+  <row>
+    <key>log_long_message</key>
+    <value>apex_debug.log_long_message (
+  p_message => [null],
+  p_enabled => [false],
+  p_level   => [apex_debug.c_log_level_app_trace]
+);</value>
+  </row>
+  <!--APEX_DEBUG.LOG_MESSAGE Procedure [DEPRECATED]-->
+  <row>
+    <key>log_message</key>
+    <value>apex_debug.log_message (
+  p_message => [null],
+  p_enabled => [false],
+  p_level   => [apex_debug.c_log_level_app_trace]
+);</value>
+  </row>
+  <!--APEX_DEBUG.LOG_PAGE_SESSION_STATE Procedure-->
+  <row>
+    <key>log_page_session_state</key>
+    <value>apex_debug.log_page_session_state (
+  p_page_id => [null],
+  p_enabled => [false],
+  p_level   => [apex_debug.c_log_level_app_trace]
+);</value>
+  </row>
+  <!--APEX_DEBUG.MESSAGE Procedure-->
+  <row>
+    <key>message1</key>
+    <value>apex_debug.message (
+  p_message    => '[]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p5           => [null],
+  p6           => [null],
+  p7           => [null],
+  p8           => [null],
+  p9           => [null],
+  p10          => [null],
+  p11          => [null],
+  p12          => [null],
+  p13          => [null],
+  p14          => [null],
+  p15          => [null],
+  p16          => [null],
+  p17          => [null],
+  p18          => [null],
+  p19          => [null],
+  p_max_length => [1000],
+  p_level      => [apex_debug.c_log_level_info],
+  p_force      => [false]
+);</value>
+  </row>
+  <!--APEX_DEBUG.REMOVE_DEBUG_BY_AGE Procedure-->
+  <row>
+    <key>remove_debug_by_age</key>
+    <value>apex_debug.remove_debug_by_age (
+  p_application_id  => [],
+  p_older_than_days => []
+);</value>
+  </row>
+  <!--APEX_DEBUG.REMOVE_DEBUG_BY_APP Procedure-->
+  <row>
+    <key>remove_debug_by_app</key>
+    <value>apex_debug.remove_debug_by_app (
+  p_application_id  => []
+);</value>
+  </row>
+  <!--APEX_DEBUG.REMOVE_DEBUG_BY_VIEW Procedure-->
+  <row>
+    <key>remove_debug_by_view</key>
+    <value>apex_debug.remove_debug_by_view (
+  p_application_id  => [],
+  p_view_id         => []
+);</value>
+  </row>
+  <!--APEX_DEBUG.REMOVE_SESSION_MESSAGES Procedure-->
+  <row>
+    <key>remove_session_messages</key>
+    <value>apex_debug.remove_session_messages (
+  p_session => [null]
+);</value>
+  </row>
+  <!--APEX_DEBUG.TOCHAR Function-->
+  <row>
+    <key>tochar</key>
+    <value>apex_debug.tochar (
+  p_value => [null]
+);</value>
+  </row>
+  <!--APEX_DEBUG.TRACE Procedure-->
+  <row>
+    <key>trace</key>
+    <value>apex_debug.trace (
+  p_message    => '[]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p5           => [null],
+  p6           => [null],
+  p7           => [null],
+  p8           => [null],
+  p9           => [null],
+  p_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_DEBUG.WARN Procedure-->
+  <row>
+    <key>warn</key>
+    <value>apex_debug.warn (
+  p_message    => '[]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p5           => [null],
+  p6           => [null],
+  p7           => [null],
+  p8           => [null],
+  p9           => [null],
+  p_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_ESCAPE.HTML Function-->
+  <row>
+    <key>html</key>
+    <value>apex_escape.html (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.HTML_ATTRIBUTE Function-->
+  <row>
+    <key>html_attribute</key>
+    <value>apex_escape.html_attribute (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.HTML_TRUNC Function-->
+  <row>
+    <key>html_trunc</key>
+    <value>apex_escape.html_trunc (
+  p_string => '[]',
+  p_length => [4000]
+);</value>
+  </row>
+  <!--APEX_ESCAPE.HTML_WHITELIST Function-->
+  <row>
+    <key>html_whitelist</key>
+    <value>apex_escape.html_whitelist (
+  p_html           => '[]',
+  p_whitelist_tags => [apex_escape.c_html_whitelist_tags]
+);</value>
+  </row>
+  <!--APEX_ESCAPE.JS_LITERAL Function-->
+  <row>
+    <key>js_literal</key>
+    <value>apex_escape.js_literal (
+  p_string => '[]',
+  p_quote  => '['']'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.JSON Function-->
+  <row>
+    <key>json</key>
+    <value>apex_escape.json (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.LDAP_DN Function-->
+  <row>
+    <key>ldap_dn</key>
+    <value>apex_escape.ldap_dn (
+  p_string            => '[]',
+  p_reserved_chars    => [apex_escape.c_ldap_dn_reserved_chars],
+  p_escaped_non_ascii => [true]
+);</value>
+  </row>
+  <!--APEX_ESCAPE.LDAP_SEARCH_FILTER Function-->
+  <row>
+    <key>ldap_search_filter</key>
+    <value>apex_escape.ldap_search_filter (
+  p_string            => '[]',
+  p_reserved_chars    => [apex_escape.c_ldap_search_reserved_chars],
+  p_escape_non_ascii  => [true]
+);</value>
+  </row>
+  <!--APEX_ESCAPE.NOOP Function-->
+  <row>
+    <key>noop</key>
+    <value>apex_escape.noop (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.REGEXP Function-->
+  <row>
+    <key>regexp</key>
+    <value>apex_escape.regexp (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_ESCAPE.SET_HTML_ESCAPING_MODE Procedure-->
+  <row>
+    <key>set_html_escaping_mode</key>
+    <value>apex_escape.set_html_escaping_mode (
+  p_mode => '[]'
+);</value>
+  </row>
+  <!--APEX_ERROR.ADD_ERROR Procedure Signature 1-->
+  <row>
+    <key>add_error1</key>
+    <value>apex_error.add_error (
+  p_message          => '[]',
+  p_additional_info  => [null],
+  p_display_location => apex_error.c_[] /*c_inline_in_notification, c_on_error_page*/
+);</value>
+  </row>
+  <!--APEX_ERROR.ADD_ERROR Procedure Signature 2-->
+  <row>
+    <key>add_error2</key>
+    <value>apex_error.add_error (
+  p_message          => '[]',
+  p_additional_info  => [null],
+  p_display_location => apex_error.c_inline_with_field[], /*c_inline_with_field, c_inline_with_field_and_notif*/
+  p_page_item_name   => '[]'
+);</value>
+  </row>
+  <!--APEX_ERROR.ADD_ERROR Procedure Signature 3-->
+  <row>
+    <key>add_error3</key>
+    <value>apex_error.add_error (
+  p_error_code          => '[]',
+  p0                    => [null],
+  p1                    => [null],
+  p2                    => [null],
+  p3                    => [null],
+  p4                    => [null],
+  p5                    => [null],
+  p6                    => [null],
+  p7                    => [null],
+  p8                    => [null],
+  p9                    => [null],
+  p_escape_placeholders => [true],
+  p_additional_info     => [null],
+  p_display_location    => apex_error.c_[], /*c_inline_with_field, c_inline_with_field_and_notif*/
+  p_page_item_name      => '[]'
+);</value>
+  </row>
+  <!--APEX_ERROR.ADD_ERROR Procedure Signature 4-->
+  <row>
+    <key>add_error4</key>
+    <value>apex_error.add_error (
+  p_message          => '[]',
+  p_additional_info  => [null],
+  p_display_location => apex_error.c_[], /*c_inline_with_field, c_inline_with_field_and_notif*/
+  p_region_id        => [],
+  p_column_alias     => [null],
+  p_row_num          => []
+);</value>
+  </row>
+  <!--APEX_ERROR.ADD_ERROR Procedure Signature 5-->
+  <row>
+    <key>add_error5</key>
+    <value>apex_error.add_error (
+  p_error_code          => '[]',
+  p0                    => [null],
+  p1                    => [null],
+  p2                    => [null],
+  p3                    => [null],
+  p4                    => [null],
+  p5                    => [null],
+  p6                    => [null],
+  p7                    => [null],
+  p8                    => [null],
+  p9                    => [null],
+  p_escape_placeholders => [true],
+  p_additional_info     => [null],
+  p_display_location    => apex_error.c_[], /*c_inline_with_field, c_inline_with_field_and_notif*/
+  p_region_id           => [],
+  p_column_alias        => [null],
+  p_row_num             => []
+);</value>
+  </row>
+  <!--APEX_ERROR.HAVE_ERRORS_OCCURRED Function-->
+  <row>
+    <key>have_errors_occurred</key>
+    <value>apex_error.have_errors_occurred;</value>
+  </row>
+  <!--APEX_ERROR.AUTO_SET_ASSOCIATED_ITEM Procedure-->
+  <row>
+    <key>auto_set_associated_item</key>
+    <value>apex_error.auto_set_associated_item (
+  p_error_result => '[]',
+  p_error        => '[]'
+);</value>
+  </row>
+  <!--APEX_ERROR.EXTRACT_CONSTRAINT_NAME Function-->
+  <row>
+    <key>extract_constraint_name</key>
+    <value>apex_error.extract_constraint_name (
+  p_error          => '[]',
+  p_include_schema => [false]
+);</value>
+  </row>
+  <!--APEX_ERROR.GET_FIRST_ORA_ERROR_TEXT Function-->
+  <row>
+    <key>get_first_ora_error_text</key>
+    <value>apex_error.get_first_ora_error_text (
+  p_error            => '[]',
+  p_include_error_no => [false]
+);</value>
+  </row>
+  <!--APEX_ERROR.INIT_ERROR_RESULT Function-->
+  <row>
+    <key>init_error_result</key>
+    <value>apex_error.init_error_result (
+  p_error => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_COLUMN Procedure-->
+  <row>
+    <key>add_column</key>
+    <value>apex_exec.add_column (
+  p_columns        => '[]',
+  p_column_name    => '[]',
+  p_data_type      => apex_exec.c_data_type_[], /*c_data_type_varchar2, c_data_type_number, c_data_type_date, c_data_type_timestamp, c_data_type_timestamp_tz, c_data_type_timestamp_ltz, c_data_type_interval_y2m, c_data_type_interval_d2s, c_data_type_blob, c_data_type_bfile, c_data_type_clob, c_data_type_rowid, c_data_type_user_defined*/
+  p_sql_expression => [null]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 1-->
+  <row>
+    <key>add_filter1</key>
+    <value>apex_exec.add_filter (
+  p_filters     => '[]',
+  p_filter_type => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 2 (VARCHAR2)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 4 (APEX_T_VARCHAR2)-->
+  <row>
+    <key>add_filter2</key>
+    <value>apex_exec.add_filter (
+  p_filters           => '[]',
+  p_filter_type       => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name       => '[]',
+  p_value             => '[]',
+  p_null_result       => [false],
+  p_is_case_sensitive => [true]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 3 (VARCHAR2)-->
+  <row>
+    <key>add_filter3</key>
+    <value>apex_exec.add_filter (
+  p_filters           => '[]',
+  p_filter_type       => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name       => '[]',
+  p_from_value        => '[]',
+  p_to_value          => '[]',
+  p_null_result       => [false],
+  p_is_case_sensitive => [true]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 5 (NUMBER)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 7 (APEX_T_NUMBER)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 8 (DATE)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 10 (TIMESTAMP)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 12 (TIMESTAMP WITH TIME ZONE)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 14 (TIMESTAMP WITH LOCAL TIME ZONE)-->
+  <row>
+    <key>add_filter4</key>
+    <value>apex_exec.add_filter (
+  p_filters     => '[]',
+  p_filter_type => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name => '[]',
+  p_value       => [],
+  p_null_result => [false]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 6 (NUMBER)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 9 (DATE)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 11 (TIMESTAMP)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 13 (TIMESTAMP WITH TIME ZONE)-->
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 15 (TIMESTAMP WITH LOCAL TIME ZONE)-->
+  <row>
+    <key>add_filter5</key>
+    <value>apex_exec.add_filter (
+  p_filters     => '[]',
+  p_filter_type => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name => '[]',
+  p_from_value  => [],
+  p_to_value    => [],
+  p_null_result => [false]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 16-->
+  <row>
+    <key>add_filter6</key>
+    <value>apex_exec.add_filter (
+  p_filters       => '[]',
+  p_filter_type   => apex_exec.c_filter_[], /*c_filter_eq,c_filter_not_eq,c_filter_gt,c_filter_gte,c_filter_lt,c_filter_lte,c_filter_null,c_filter_not_null,c_filter_starts_with,c_filter_not_starts_with,c_filter_ends_with,c_filter_not_ends_with,c_filter_contains,c_filter_not_contains,c_filter_in,c_filter_not_in,c_filter_between,c_filter_not_between,c_filter_regexp,c_filter_last,c_filter_not_last,c_filter_next,c_filter_not_next,c_filter_like,c_filter_not_like,c_filter_search,c_filter_sql_expression*/
+  p_column_name   => '[]',
+  p_interval      => [],
+  p_interval_type => apex_exec.c_filter_int_type_[], /*c_filter_int_type_year,c_filter_int_type_month,c_filter_int_type_week,c_filter_int_type_day,c_filter_int_type_hour,c_filter_int_type_minute*/
+  p_null_result   => [false]
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 17-->
+  <row>
+    <key>add_filter7</key>
+    <value>apex_exec.add_filter (
+  p_filters           => '[]',
+  p_search_columns    => '[]',
+  p_is_case_sensitive => [true],
+  p_value             => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_FILTER Procedure Signature 18-->
+  <row>
+    <key>add_filter8</key>
+    <value>apex_exec.add_filter (
+  p_filters        => '[]',
+  p_sql_expression => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_ORDER_BY Procedure Signature 1-->
+  <row>
+    <key>add_order_by1</key>
+    <value>apex_exec.add_order_by (
+  p_order_bys   => '[]',
+  p_column_name => '[]',
+  p_lov         => '[]',
+  p_direction   => [apex_exec.c_order_asc],
+  p_order_nulls => apex_exec.c_order_nulls_[] /*c_order_nulls_first, c_order_nulls_last*/
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_ORDER_BY Procedure Signature 2-->
+  <row>
+    <key>add_order_by2</key>
+    <value>apex_exec.add_order_by (
+  p_order_bys   => '[]',
+  p_position    => [],
+  p_direction   => [apex_exec.c_order_asc],
+  p_order_nulls => apex_exec.c_order_nulls_[] /*c_order_nulls_first, c_order_nulls_last*/
+);</value>
+  </row>
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 1 (VARCHAR2)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 2 (NUMBER)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 3 (DATE)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 4 (TIMESTAMP)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 5 (TIMESTAMP WITH TIME ZONE)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 6 (TIMESTAMP WITH LOCAL TIME ZONE)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 7 (INTERVAL YEAR TO MONTH)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 8 (INTERVAL DAY TO SECOND)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 9 (BLOB)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 10 (BFILE)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 11 (CLOB)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 12 (SYS.ANYDATA)-->
+  <!--APEX_EXEC.ADD_PARAMETER Procedure Signature 13 (T_VALUE)-->
+  <row>
+    <key>add_parameter</key>
+    <value>apex_exec.add_parameter (
+  p_parameters => '[]',
+  p_name       => '[]',
+  p_value      => []
+);</value>
+  </row>
+  <!--APEX_EXEC.CLOSE Procedure-->
+  <row>
+    <key>close</key>
+    <value>apex_exec.close (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.EXECUTE_PLSQL Procedure-->
+  <row>
+    <key>execute_plsql</key>
+    <value>apex_exec.execute_plsql (
+  p_plsql_code      => '[]',
+  p_auto_bind_items => [true],
+  p_sql_parameters  => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.EXECUTE_REMOTE_PLSQL Procedure-->
+  <row>
+    <key>execute_remote_plsql</key>
+    <value>apex_exec.execute_remote_plsql (
+  p_server_static_id => '[]',
+  p_plsql_code       => '[]',
+  p_auto_bind_items  => [true],
+  p_sql_parameters   => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.EXECUTE_WEB_SOURCE Procedure-->
+  <row>
+    <key>execute_web_source</key>
+    <value>apex_exec.execute_web_source (
+  p_module_static_id => '[]',
+  p_operation        => '[]',
+  p_url_pattern      => [null],
+  p_parameters       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_VARCHAR2 Functions-->
+  <row>
+    <key>get_varchar21</key>
+    <value>apex_exec.get_varchar2 (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_NUMBER Functions-->
+  <row>
+    <key>get_number1</key>
+    <value>apex_exec.get_number (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_DATE Functions-->
+  <row>
+    <key>get_date1</key>
+    <value>apex_exec.get_date (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP Functions-->
+  <row>
+    <key>get_timestamp</key>
+    <value>apex_exec.get_timestamp (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP_TZ Functions-->
+  <row>
+    <key>get_timestamp_tz</key>
+    <value>apex_exec.get_timestamp_tz (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP_LTZ Functions-->
+  <row>
+    <key>get_timestamp_ltz</key>
+    <value>apex_exec.get_timestamp_ltz (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_CLOB Functions-->
+  <row>
+    <key>get_clob1</key>
+    <value>apex_exec.get_clob (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_INTERVALD2S Functions-->
+  <row>
+    <key>get_intervald2s</key>
+    <value>apex_exec.get_intervald2s (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_INTERVALY2M Functions-->
+  <row>
+    <key>get_intervaly2m</key>
+    <value>apex_exec.get_intervaly2m (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_COLUMN Function-->
+  <row>
+    <key>get_column</key>
+    <value>apex_exec.get_column (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_COLUMN_COUNT Function-->
+  <row>
+    <key>get_column_count</key>
+    <value>apex_exec.get_column_count (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_COLUMN_POSITION Function-->
+  <row>
+    <key>get_column_position</key>
+    <value>apex_exec.get_column_position (
+  p_context         => '[]',
+  p_column_name     => '[]',
+  p_attribute_label => [null],
+  p_is_required     => [false],
+  p_data_type       => [apex_exec.c_data_type_varchar2]
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_VARCHAR2 Functions-->
+  <row>
+    <key>get_parameter_varchar2</key>
+    <value>apex_exec.get_parameter_varchar2 (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_NUMBER Functions-->
+  <row>
+    <key>get_parameter_number</key>
+    <value>apex_exec.get_parameter_number (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_DATE Functions-->
+  <row>
+    <key>get_parameter_date</key>
+    <value>apex_exec.get_parameter_date (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_TIMESTAMP Functions-->
+  <row>
+    <key>get_parameter_timestamp</key>
+    <value>apex_exec.get_parameter_timestamp (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_TIMESTAMP_TZ Functions-->
+  <row>
+    <key>get_parameter_timestamp_tz</key>
+    <value>apex_exec.get_parameter_timestamp_tz (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_TIMESTAMP_LTZ Functions-->
+  <row>
+    <key>get_parameter_timestamp_ltz</key>
+    <value>apex_exec.get_parameter_timestamp_ltz (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_CLOB Functions-->
+  <row>
+    <key>get_parameter_clob</key>
+    <value>apex_exec.get_parameter_clob (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_INTERVAL_D2S Functions-->
+  <row>
+    <key>get_parameter_interval_d2s</key>
+    <value>apex_exec.get_parameter_interval_d2s (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_PARAMETER_INTERVAL_Y2M Functions-->
+  <row>
+    <key>get_parameter_interval_y2m</key>
+    <value>apex_exec.get_parameter_interval_y2m (
+  p_parameters => '[]',
+  p_name       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TOTAL_ROW_COUNT Function-->
+  <row>
+    <key>get_total_row_count</key>
+    <value>apex_exec.get_total_row_count (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.IS_REMOTE_SQL_AUTH_VALID Function-->
+  <row>
+    <key>is_remote_sql_auth_valid</key>
+    <value>apex_exec.is_remote_sql_auth_valid (
+  p_server_static_id => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.NEXT_ROW Function-->
+  <row>
+    <key>next_row</key>
+    <value>apex_exec.next_row (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.OPEN_REMOTE_SQL_QUERY Function-->
+  <row>
+    <key>open_remote_sql_query</key>
+    <value>apex_exec.open_remote_sql_query (
+  p_server_static_id      => '[]',
+  p_sql_query             => '[]',
+  p_sql_parameters        => [apex_exec.c_empty_parameters],
+  p_auto_bind_items       => [true],
+  p_first_row             => [null],
+  p_max_rows              => [null],
+  p_total_row_count       => [false],
+  p_total_row_count_limit => [null]
+);</value>
+  </row>
+  <!--APEX_EXEC.OPEN_QUERY_CONTEXT Function-->
+  <row>
+    <key>open_query_context</key>
+    <value>apex_exec.open_query_context (
+  p_location               => apex_exec.c_location_[], /*c_location_local_db, c_location_remote_db, c_location_web_source*/
+  p_table_owner            => [null],
+  p_table_name             => [null],
+  p_where_clause           => [null],
+  p_order_by_clause        => [null],
+  p_include_rowid_column   => [false],
+  p_sql_query              => [null],
+  p_plsql_function_body    => [null],
+  p_optimizer_hint         => [null],
+  p_server_static_id       => [null],
+  p_module_static_id       => [null],
+  p_web_src_parameters     => [apex_exec.c_empty_parameters],
+  p_external_filter_expr   => [null],
+  p_external_order_by_expr => [null],
+  p_sql_parameters         => [apex_exec.c_empty_parameters],
+  p_auto_bind_items        => [true],
+  p_columns                => [apex_exec.c_empty_columns],
+  p_filters                => [apex_exec.c_empty_filters],
+  p_order_bys              => [apex_exec.c_empty_order_bys],
+  p_first_row              => [null],
+  p_max_rows               => [null],
+  p_total_row_count        => [false],
+  p_total_row_count_limit  => [null]
+);</value>
+  </row>
+  <!--APEX_EXEC.OPEN_WEB_SOURCE_QUERY Function-->
+  <row>
+    <key>open_web_source_query</key>
+    <value>apex_exec.open_web_source_query (
+  p_module_static_id       => '[]'
+  p_parameters             => [apex_exec.c_empty_parameters],
+  p_filters                => [apex_exec.c_empty_filters],
+  p_order_bys              => [apex_exec.c_empty_order_bys],
+  p_columns                => [apex_exec.c_empty_columns],
+  p_first_row              => [null],
+  p_max_rows               => [null],
+  p_external_filter_expr   => [null],
+  p_external_order_by_expr => [null],
+  p_total_row_count        => [false]
+);</value>
+  </row>
+  <!--APEX_EXEC.PURGE_WEB_SOURCE_CACHE Procedure-->
+  <row>
+    <key>purge_web_source_cache</key>
+    <value>apex_exec.purge_web_source_cache (
+  p_module_static_id     => '[]',
+  p_current_session_only => [false]
+);</value>
+  </row>
+  <!--APEX_EXPORT.GET_APPLICATION Function-->
+  <row>
+    <key>get_application</key>
+    <value>apex_export.get_application (
+  p_application_id          => []
+  p_split                   => [false],
+  p_with_date               => [false],
+  p_with_ir_public_reports  => [false],
+  p_with_ir_private_reports => [false],
+  p_with_ir_notifications   => [false],
+  p_with_translations       => [false],
+  p_with_pkg_app_mapping    => [false],
+  p_with_original_ids       => [false],
+  p_with_no_subscriptions   => [false],
+  p_with_comments           => [false],
+  p_with_supporting_objects => [null],
+  p_with_acl_assignments    => [false]
+);</value>
+  </row>
+  <!--APEX_EXPORT.GET_WORKSPACE_FILES Function-->
+  <row>
+    <key>get_workspace_files</key>
+    <value>apex_export.get_workspace_files (
+  p_workspace_id => [],
+  p_with_date    => 
+);</value>
+  </row>
+  <!--APEX_EXPORT.GET_FEEDBACK Function-->
+  <row>
+    <key>get_feedback</key>
+    <value>apex_export.get_feedback (
+  p_workspace_id      => [],
+  p_with_date         => [false],
+  p_since             => [null],
+  p_deployment_system => [null]
+);</value>
+  </row>
+  <!--APEX_EXPORT.GET_WORKSPACE Function-->
+  <row>
+    <key>get_workspace</key>
+    <value>apex_export.get_workspace (
+  p_workspace_id           => [],
+  p_with_date              => [false],
+  p_with_team_development  => [false],
+  p_with_misc              => [false]
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.ADD_SCHEMA Procedure-->
+  <row>
+    <key>add_schema</key>
+    <value>apex_instance_admin.add_schema (
+  p_workspace => '[]',
+  p_schema    => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.ADD_WORKSPACE Procedure-->
+  <row>
+    <key>add_workspace</key>
+    <value>apex_instance_admin.add_workspace (
+  p_workspace_id       => [null],
+  p_workspace          => '[]',
+  p_source_identifier  => [null],
+  p_primary_schema     => '[]',
+  p_additional_schemas => '[]',
+  p_rm_consumer_group  => [null]
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.CREATE_SCHEMA_EXCEPTION Procedure-->
+  <row>
+    <key>create_schema_exception</key>
+    <value>apex_instance_admin.create_schema_exception (
+  p_schema    => '[]',
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.FREE_WORKSPACE_APP_IDS Procedure-->
+  <row>
+    <key>free_workspace_app_ids</key>
+    <value>apex_instance_admin.free_workspace_app_ids (
+  p_workspace_id => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.GET_PARAMETER Function-->
+  <row>
+    <key>get_parameter</key>
+    <value>apex_instance_admin.get_parameter (
+  p_parameter => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.GET_SCHEMAS Function-->
+  <row>
+    <key>get_schemas</key>
+    <value>apex_instance_admin.get_schemas (
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.GET_WORKSPACE_PARAMETER Procedure-->
+  <row>
+    <key>get_workspace_parameter</key>
+    <value>apex_instance_admin.get_workspace_parameter (
+  p_workspace => '[]',
+  p_parameter => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_APPLICATION Procedure-->
+  <row>
+    <key>remove_application</key>
+    <value>apex_instance_admin.remove_application (
+  p_application_id => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SAVED_REPORT Procedure-->
+  <row>
+    <key>remove_saved_report</key>
+    <value>apex_instance_admin.remove_saved_report (
+  p_application_id => [],
+  p_report_id      => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SAVED_REPORTS Procedure-->
+  <row>
+    <key>remove_saved_reports</key>
+    <value>apex_instance_admin.remove_saved_reports (
+  p_application_id => [null]
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SCHEMA Procedure-->
+  <row>
+    <key>remove_schema</key>
+    <value>apex_instance_admin.remove_schema (
+  p_workspace => '[]',
+  p_schema    => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SCHEMA_EXCEPTION Procedure-->
+  <row>
+    <key>remove_schema_exception</key>
+    <value>apex_instance_admin.remove_schema_exception (
+  p_schema    => '[]',
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SCHEMA_EXCEPTIONS Procedure-->
+  <row>
+    <key>remove_schema_exceptions</key>
+    <value>apex_instance_admin.remove_schema_exceptions (
+  p_schema => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_SUBSCRIPTION Procedure-->
+  <row>
+    <key>remove_subscription</key>
+    <value>apex_instance_admin.remove_subscription (
+  p_subscription_id => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_WORKSPACE Procedure-->
+  <row>
+    <key>remove_workspace</key>
+    <value>apex_instance_admin.remove_workspace (
+  p_workspace        => '[]',
+  p_drop_users       => '[N]',
+  p_drop_tablespaces => '[N]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.REMOVE_WORKSPACE_EXCEPTIONS Procedure-->
+  <row>
+    <key>remove_workspace_exceptions</key>
+    <value>apex_instance_admin.remove_workspace_exceptions (
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.RESERVE_WORKSPACE_APP_IDS Procedure-->
+  <row>
+    <key>reserve_workspace_app_ids</key>
+    <value>apex_instance_admin.reserve_workspace_app_ids (
+  p_workspace_id => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.RESTRICT_SCHEMA Procedure-->
+  <row>
+    <key>restrict_schema</key>
+    <value>apex_instance_admin.restrict_schema (
+  p_schema => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.SET_LOG_SWITCH_INTERVAL Procedure-->
+  <row>
+    <key>set_log_switch_interval</key>
+    <value>apex_instance_admin.set_log_switch_interval (
+  p_log_name              => '[]',
+  p_log_switch_after_days => []
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.SET_WORKSPACE_PARAMETER-->
+  <row>
+    <key>set_workspace_parameter</key>
+    <value>apex_instance_admin.set_workspace_parameter (
+  p_workspace => '[]',
+  p_parameter => '[]',
+  p_value     => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.SET_PARAMETER Procedure-->
+  <row>
+    <key>set_parameter</key>
+    <value>apex_instance_admin.set_parameter (
+  p_parameter => '[]',
+  p_value     => '[N]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.SET_WORKSPACE_CONSUMER_GROUP Procedure-->
+  <row>
+    <key>set_workspace_consumer_group</key>
+    <value>apex_instance_admin.set_workspace_consumer_group (
+  p_workspace         => '[]',
+  p_rm_consumer_group => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.TRUNCATE_LOG Procedure-->
+  <row>
+    <key>truncate_log</key>
+    <value>apex_instance_admin.truncate_log (
+  p_log => '[]'
+);</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.UNRESTRICT_SCHEMA Procedure-->
+  <row>
+    <key>unrestrict_schema</key>
+    <value>apex_instance_admin.unrestrict_schema (
+  p_schema => '[]'
+);</value>
+  </row>
+  <!--APEX_IR.ADD_FILTER Procedure Signature 1-->
+  <row>
+    <key>add_filter_report_id</key>
+    <value>apex_ir.add_filter (
+  p_page_id       => [],
+  p_region_id     => [],
+  p_report_column => '[]',
+  p_filter_value  => '[]',
+  p_operator_abbr => [null],
+  p_report_id     => [null]
+);</value>
+  </row>
+  <!--APEX_IR.ADD_FILTER Procedure Signature 2-->
+  <row>
+    <key>add_filter_report_alias</key>
+    <value>apex_ir.add_filter (
+  p_page_id       => [],
+  p_region_id     => [],
+  p_report_column => '[]',
+  p_filter_value  => '[]',
+  p_operator_abbr => [null],
+  p_report_alias  => [null]
+);</value>
+  </row>
+  <!--APEX_IR.CHANGE_REPORT_OWNER Procedure-->
+  <row>
+    <key>change_report_owner</key>
+    <value>apex_ir.change_report_owner (
+  p_report_id => [],
+  p_old_owner => '[]',
+  p_new_owner => '[]'
+);</value>
+  </row>
+  <!--APEX_IR.CHANGE_SUBSCRIPTION_EMAIL Procedure-->
+  <row>
+    <key>change_subscription_email</key>
+    <value>apex_ir.change_subscription_email (
+  p_subscription_id => [],
+  p_email_address   => '[]'
+);</value>
+  </row>
+  <!--APEX_IR.CHANGE_SUBSCRIPTION_LANG Procedure-->
+  <row>
+    <key>change_subscription_lang</key>
+    <value>apex_ir.change_subscription_lang (
+  p_subscription_id => [],
+  p_language        => '[]'
+);</value>
+  </row>
+  <!--APEX_IR.CLEAR_REPORT Procedure Signature 1-->
+  <row>
+    <key>clear_report_id</key>
+    <value>apex_ir.clear_report (
+  p_page_id   => [],
+  p_region_id => [],
+  p_report_id => [null]
+);</value>
+  </row>
+  <!--APEX_IR.CLEAR_REPORT Procedure Signature 2-->
+  <row>
+    <key>clear_report_alias</key>
+    <value>apex_ir.clear_report (
+  p_page_id      => [],
+  p_region_id    => [],
+  p_report_alias => [null]
+);</value>
+  </row>
+  <!--APEX_IR.DELETE_REPORT Procedure-->
+  <row>
+    <key>delete_report</key>
+    <value>apex_ir.delete_report (
+  p_report_id => []
+);</value>
+  </row>
+  <!--APEX_IR.DELETE_SUBSCRIPTION Procedure-->
+  <row>
+    <key>delete_subscription</key>
+    <value>apex_ir.delete_subscription (
+  p_subscription_id => []
+);</value>
+  </row>
+  <!--APEX_IR.GET_LAST_VIEWED_REPORT_ID Function-->
+  <row>
+    <key>get_last_viewed_report_id</key>
+    <value>apex_ir.get_last_viewed_report_id (
+  p_page_id      => [],
+  p_region_id    => []
+);</value>
+  </row>
+  <!--APEX_IR.GET_REPORT Function-->
+  <row>
+    <key>get_report</key>
+    <value>apex_ir.get_report (
+  p_page_id   => [],
+  p_region_id => [],
+  p_report_id => [null],
+  p_view      => [apex_ir.c_view_report]
+);</value>
+  </row>
+  <!--APEX_IR.RESET_REPORT Procedure Signature 1-->
+  <row>
+    <key>reset_report_id</key>
+    <value>apex_ir.reset_report (
+  p_page_id   => [],
+  p_region_id => [],
+  p_report_id => [null]
+);</value>
+  </row>
+  <!--APEX_IR.RESET_REPORT Procedure Signature 2-->
+  <row>
+    <key>reset_report_alias</key>
+    <value>apex_ir.reset_report (
+  p_page_id      => [],
+  p_region_id    => [],
+  p_report_alias => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.CHECKBOX2 Function-->
+  <row>
+    <key>checkbox2</key>
+    <value>apex_item.checkbox2 (
+  p_idx                      => [],
+  p_value                    => [null],
+  p_attributes               => [null],
+  p_checked_values           => [null],
+  p_checked_values_delimiter => '[:]',
+  p_item_id                  => [null],
+  p_item_label               => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.DATE_POPUP Function-->
+  <row>
+    <key>date_popup</key>
+    <value>apex_item.date_popup (
+  p_idx         => [],
+  p_row         => [],
+  p_value       => [null],
+  p_date_format => '[DD-MON-YYYY]',
+  p_size        => [20],
+  p_maxlength   => [2000],
+  p_attributes  => [null],
+  p_item_id     => [null],
+  p_item_label  => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.DATE_POPUP2 Function-->
+  <row>
+    <key>date_popup2</key>
+    <value>apex_item.date_popup2 (
+  p_idx                 => [],
+  p_value               => [null],
+  p_date_format         => [null],
+  p_size                => [20],
+  p_maxLength           => [2000],
+  p_attributes          => [null],
+  p_item_id             => [null],
+  p_item_label          => [null],
+  p_default_value       => [null],
+  p_max_value           => [null],
+  p_min_value           => [null],
+  p_show_on             => '[button]',
+  p_number_of_months    => [null],
+  p_navigation_list_for => '[NONE]',
+  p_year_range          => [null],
+  p_validation_date     => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.DISPLAY_AND_SAVE Function-->
+  <row>
+    <key>display_and_save</key>
+    <value>apex_item.display_and_save (
+  p_idx        => [],
+  p_value      => [null],
+  p_item_id    => [null],
+  p_item_label => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.HIDDEN Function-->
+  <row>
+    <key>hidden</key>
+    <value>apex_item.hidden (
+  p_idx        => [],
+  p_value      => [null],
+  p_attributes => [null],
+  p_item_id    => [null],
+  p_item_label => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.MD5_CHECKSUM Function-->
+  <row>
+    <key>md5_checksum</key>
+    <value>apex_item.md5_checksum (
+  p_value01 => [null],
+  ...
+  p_value50 => [null],
+  p_col_sep => '[|]',
+  p_item_id => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.MD5_HIDDEN Function-->
+  <row>
+    <key>md5_hidden</key>
+    <value>apex_item.md5_hidden (
+  p_idx     => [],
+  p_value01 => [null],
+  ...
+  p_value50 => [null],
+  p_col_sep => '[|]',
+  p_item_id => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.POPUP_FROM_LOV Function-->
+  <row>
+    <key>popup_from_lov</key>
+    <value>apex_item.popup_from_lov (
+  p_idx          => [],
+  p_value        => [null],
+  p_lov_name     => '[]',
+  p_width        => [null],
+  p_max_length   => [null],
+  p_form_index   => '[0]',
+  p_escape_html  => [null],
+  p_max_elements => [null],
+  p_attributes   => [null],
+  p_ok_to_query  => '[YES]',
+  p_item_id      => [null],
+  p_item_label   => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.POPUP_FROM_QUERY Function-->
+  <row>
+    <key>popup_from_query</key>
+    <value>apex_item.popup_from_query (
+  p_idx          => [],
+  p_value        => [null],
+  p_lov_query    => '[]',
+  p_width        => [null],
+  p_max_length   => [null],
+  p_form_index   => '[0]',
+  p_escape_html  => [null],
+  p_max_elements => [null],
+  p_attributes   => [null],
+  p_ok_to_query  => '[YES]',
+  p_item_id      => [null],
+  p_item_label   => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.POPUPKEY_FROM_LOV Function-->
+  <row>
+    <key>popupkey_from_lov</key>
+    <value>apex_item.popupkey_from_lov (
+  p_idx          => [],
+  p_value        => [null],
+  p_lov_name     => '[]',
+  p_width        => [null],
+  p_max_length   => [null],
+  p_form_index   => '[0]',
+  p_escape_html  => [null],
+  p_max_elements => [null],
+  p_attributes   => [null],
+  p_ok_to_query  => '[YES]',
+  p_item_id      => [null],
+  p_item_label   => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.POPUPKEY_FROM_QUERY Function-->
+  <row>
+    <key>popupkey_from_query</key>
+    <value>apex_item.popupkey_from_query (
+  p_idx          => [],
+  p_value        => [null],
+  p_lov_query    => '[]',
+  p_width        => [null],
+  p_max_length   => [null],
+  p_form_index   => '[0]',
+  p_escape_html  => [null],
+  p_max_elements => [null],
+  p_attributes   => [null],
+  p_ok_to_query  => '[YES]',
+  p_item_id      => [null],
+  p_item_label   => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.RADIOGROUP Function-->
+  <row>
+    <key>radiogroup</key>
+    <value>apex_item.radiogroup (
+  p_idx            => [],
+  p_value          => [null],
+  p_selected_value => [null],
+  p_display        => [null],
+  p_attributes     => [null],
+  p_onblur         => [null],
+  p_onchange       => [null],
+  p_onfocus        => [null],
+  p_item_id        => [null],
+  p_item_label     => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.SELECT_LIST Function-->
+  <row>
+    <key>select_list</key>
+    <value>apex_item.select_list (
+  p_idx         => [],
+  p_value       => [null],
+  p_list_values => [null],
+  p_attributes  => [null],
+  p_show_null   => '[NO]',
+  p_null_value  => '[%NULL%]',
+  p_null_text   => '[%]',
+  p_item_id     => [null],
+  p_item_label  => [null],
+  p_show_extra  => '[YES]'
+);</value>
+  </row>
+  <!--APEX_ITEM.SELECT_LIST_FROM_LOV Function-->
+  <row>
+    <key>select_list_from_lov</key>
+    <value>apex_item.select_list_from_lov (
+  p_idx        => [],
+  p_value      => [null],
+  p_lov        => '[]',
+  p_attributes => [null],
+  p_show_null  => '[YES]',
+  p_null_value => '[%NULL%]',
+  p_null_text  => '[%]',
+  p_item_id    => [null],
+  p_item_label => [null],
+  p_show_extra => '[YES]'
+);</value>
+  </row>
+  <!--APEX_ITEM.SELECT_LIST_FROM_LOV_XL Function-->
+  <row>
+    <key>select_list_from_lov_xl</key>
+    <value>apex_item.select_list_from_lov_xl (
+  p_idx        => [],
+  p_value      => [null],
+  p_lov        => '[]',
+  p_attributes => [null],
+  p_show_null  => '[YES]',
+  p_null_value => '[%NULL%]',
+  p_null_text  => '[%]',
+  p_item_id    => [null],
+  p_item_label => [null],
+  p_show_extra => '[YES]'
+);</value>
+  </row>
+  <!--APEX_ITEM.SELECT_LIST_FROM_QUERY Function-->
+  <row>
+    <key>select_list_from_query</key>
+    <value>apex_item.select_list_from_query (
+  p_idx        => [],
+  p_value      => [null],
+  p_query      => '[]',
+  p_attributes => [null],
+  p_show_null  => '[YES]',
+  p_null_value => '[%NULL%]',
+  p_null_text  => '[%]',
+  p_item_id    => [null],
+  p_item_label => [null],
+  p_show_extra => '[YES]'
+);</value>
+  </row>
+  <!--APEX_ITEM.SELECT_LIST_FROM_QUERY_XL Function-->
+  <row>
+    <key>select_list_from_query_xl</key>
+    <value>apex_item.select_list_from_query_xl (
+  p_idx        => [],
+  p_value      => [null],
+  p_query      => '[]',
+  p_attributes => [null],
+  p_show_null  => '[YES]',
+  p_null_value => '[%NULL%]',
+  p_null_text  => '[%]',
+  p_item_id    => [null],
+  p_item_label => [null],
+  p_show_extra => '[YES]'
+);</value>
+  </row>
+  <!--APEX_ITEM.SWITCH Function-->
+  <row>
+    <key>switch</key>
+    <value>apex_item.switch (
+  p_idx        => [],
+  p_value      => '[]',
+  p_on_value   => '[Y]',
+  p_on_label   => '[Yes]',
+  p_off_value  => '[N]',
+  p_off_label  => '[No]',
+  p_item_id    => [null],
+  p_item_label => '[]',
+  p_attributes => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.TEXT Function-->
+  <row>
+    <key>text</key>
+    <value>apex_item.text (
+  p_idx        => [],
+  p_value      => [null],
+  p_size       => [null],
+  p_maxlength  => [null],
+  p_attributes => [null],
+  p_item_id    => [null],
+  p_item_label => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.TEXTAREA Function-->
+  <row>
+    <key>textarea</key>
+    <value>apex_item.textarea (
+  p_idx        => [],
+  p_value      => [null],
+  p_rows       => [40],
+  p_cols       => [4],
+  p_attributes => [null],
+  p_item_id    => [null],
+  p_item_label => [null]
+);</value>
+  </row>
+  <!--APEX_ITEM.TEXT_FROM_LOV Function-->
+  <row>
+    <key>text_from_lov</key>
+    <value>apex_item.text_from_lov (
+  p_value     => [null],
+  p_lov       => '[]',
+  p_null_text => '[%]'
+);</value>
+  </row>
+  <!--APEX_ITEM.TEXT_FROM_LOV_QUERY Function-->
+  <row>
+    <key>text_from_lov_query</key>
+    <value>apex_item.text_from_lov_query (
+  p_value     => [null],
+  p_query     => '[]',
+  p_null_text => '[%]'
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_3RD_PARTY_LIBRARY_FILE Procedure-->
+  <row>
+    <key>add_3rd_party_library_file2</key>
+    <value>apex_javascript.add_3rd_party_library_file (
+  p_library   => apex_javascript.c_library_[], /*c_library_jquery, c_library_jquery_ui, c_library_jquery_mobile*/
+  p_file_name => '[]',
+  p_directory => [null],
+  p_version   => [null]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_ATTRIBUTE Function Signature 1 (VARCHAR2)-->
+  <!--APEX_JAVASCRIPT.ADD_ATTRIBUTE Function Signature 2 (NUMBER)-->
+  <!--APEX_JAVASCRIPT.ADD_ATTRIBUTE Function Signature 3 (BOOLEAN)-->
+  <!--APEX_JAVASCRIPT.ADD_ATTRIBUTE Function Signature 4 (DATE)-->
+  <row>
+    <key>add_attribute</key>
+    <value>apex_javascript.add_attribute (
+  p_name      => '[]',
+  p_value     => [],
+  p_omit_null => [true],
+  p_add_comma => [true]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_INLINE_CODE Procedure-->
+  <row>
+    <key>add_inline_code</key>
+    <value>apex_javascript.add_inline_code (
+  p_code => '[]',
+  p_key  => [null]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_LIBRARY Procedure-->
+  <row>
+    <key>add_library</key>
+    <value>apex_javascript.add_library (
+  p_name                    => '[]',
+  p_directory               => '[]',
+  p_version                 => [null],
+  p_check_to_add_minified   => [false],
+  p_skip_extension          => [false],
+  p_ie_condition            => [null],
+  p_requirejs_module        => [null],
+  p_requirejs_js_expression => [null],
+  p_requirejs_required      => [false],
+  p_key                     => [null]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_REQUIREJS Procedure-->
+  <row>
+    <key>add_requirejs</key>
+    <value>apex_javascript.add_requirejs;</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_REQUIREJS_DEFINE Procedure-->
+  <row>
+    <key>add_requirejs_define</key>
+    <value>apex_javascript.add_requirejs_define (
+  p_module        => '[]',
+  p_js_expression => '[]'
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_ONLOAD_CODE Procedure-->
+  <row>
+    <key>add_onload_code</key>
+    <value>apex_javascript.add_onload_code (
+  p_code => '[]',
+  p_key  => [null]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ADD_VALUE Function Signature 1 (VARCHAR2)-->
+  <!--APEX_JAVASCRIPT.ADD_VALUE Function Signature 2 (NUMBER)-->
+  <!--APEX_JAVASCRIPT.ADD_VALUE Function Signature 3 (DATE)-->
+  <!--APEX_JAVASCRIPT.ADD_VALUE Function Signature 4 (BOOLEAN)-->
+  <row>
+    <key>add_value</key>
+    <value>apex_javascript.add_value (
+  p_value     => [],
+  p_add_comma => [true]
+);</value>
+  </row>
+  <!--APEX_JAVASCRIPT.ESCAPE Function-->
+  <row>
+    <key>escape1</key>
+    <value>apex_javascript.escape (
+  p_value => '[]'
+);</value>
+  </row>
+  <!--APEX_JSON.CLOSE_ALL Procedure-->
+  <row>
+    <key>close_all</key>
+    <value>apex_json.close_all;</value>
+  </row>
+  <!--APEX_JSON.CLOSE_ARRAY Procedure-->
+  <row>
+    <key>close_array</key>
+    <value>apex_json.close_array;</value>
+  </row>
+  <!--APEX_JSON.CLOSE_OBJECT Procedure-->
+  <row>
+    <key>close_object</key>
+    <value>apex_json.close_object;</value>
+  </row>
+  <!--APEX_JSON.DOES_EXIST Function-->
+  <row>
+    <key>does_exist</key>
+    <value>apex_json.does_exist (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.FIND_PATHS_LIKE Function-->
+  <row>
+    <key>find_paths_like</key>
+    <value>apex_json.find_paths_like (
+  p_return_path => '[]',
+  p_subpath     => [null],
+  p_value       => [null],
+  p_values      => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.FREE_OUTPUT Procedure-->
+  <row>
+    <key>free_output</key>
+    <value>apex_json.free_output;</value>
+  </row>
+  <!--APEX_JSON.FLUSH Procedure-->
+  <row>
+    <key>flush</key>
+    <value>apex_json.flush;</value>
+  </row>
+  <!--APEX_JSON.GET_BOOLEAN Function-->
+  <row>
+    <key>get_boolean</key>
+    <value>apex_json.get_boolean (
+  p_path    => '[]',
+  p0        => [null],
+  p1        => [null],
+  p2        => [null],
+  p3        => [null],
+  p4        => [null],
+  p_default => [null],
+  p_values  => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_CLOB_OUTPUT Function-->
+  <row>
+    <key>get_clob_output</key>
+    <value>apex_json.get_clob_output;</value>
+  </row>
+  <!--APEX_JSON.GET_COUNT Function-->
+  <row>
+    <key>get_count</key>
+    <value>apex_json.get_count (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_DATE Function-->
+  <row>
+    <key>get_date2</key>
+    <value>apex_json.get_date (
+  p_path    => '[]',
+  p0        => [null],
+  p1        => [null],
+  p2        => [null],
+  p3        => [null],
+  p4        => [null],
+  p_default => [null],
+  p_format  => [apex_json.c_date_iso8601],
+  p_values  => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_MEMBERS Function-->
+  <row>
+    <key>get_members</key>
+    <value>apex_json.get_members (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_NUMBER Function-->
+  <row>
+    <key>get_number2</key>
+    <value>apex_json.get_number (
+  p_path    => '[]',
+  p0        => [null],
+  p1        => [null],
+  p2        => [null],
+  p3        => [null],
+  p4        => [null],
+  p_default => [null],
+  p_values  => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_VALUE Function-->
+  <row>
+    <key>get_value2</key>
+    <value>apex_json.get_value (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_T_NUMBER Function-->
+  <row>
+    <key>get_t_number</key>
+    <value>apex_json.get_t_number (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_T_VARCHAR2 Function-->
+  <row>
+    <key>get_t_varchar2</key>
+    <value>apex_json.get_t_varchar2 (
+  p_path   => '[]',
+  p0       => [null],
+  p1       => [null],
+  p2       => [null],
+  p3       => [null],
+  p4       => [null],
+  p_values => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_VARCHAR2 Function-->
+  <row>
+    <key>get_varchar22</key>
+    <value>apex_json.get_varchar2 (
+  p_path    => '[]',
+  p0        => [null],
+  p1        => [null],
+  p2        => [null],
+  p3        => [null],
+  p4        => [null],
+  p_default => [null],
+  p_values  => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.GET_CLOB Function-->
+  <row>
+    <key>get_clob2</key>
+    <value>apex_json.get_clob (
+  p_path    => '[]',
+  p0        => [null],
+  p1        => [null],
+  p2        => [null],
+  p3        => [null],
+  p4        => [null],
+  p_default => [null],
+  p_values  => [apex_json.g_values]
+);</value>
+  </row>
+  <!--APEX_JSON.INITIALIZE_CLOB_OUTPUT Procedure-->
+  <row>
+    <key>initialize_clob_output</key>
+    <value>apex_json.initialize_clob_output (
+  p_dur    => [sys.dbms_lob.call],
+  p_cache  => [true],
+  p_indent => [null]
+);</value>
+  </row>
+  <!--APEX_JSON.INITIALIZE_OUTPUT Procedure-->
+  <row>
+    <key>initialize_output</key>
+    <value>apex_json.initialize_output (
+  p_http_header     => [true],
+  p_http_cache      => [false],
+  p_http_cache_etag => [null],
+  p_indent          => [null]
+);</value>
+  </row>
+  <!--APEX_JSON.OPEN_ARRAY Procedure-->
+  <row>
+    <key>open_array</key>
+    <value>apex_json.open_array (
+  p_name => [null]
+);</value>
+  </row>
+  <!--APEX_JSON.OPEN_OBJECT Procedure-->
+  <row>
+    <key>open_object</key>
+    <value>apex_json.open_object (
+  p_name => [null]
+);</value>
+  </row>
+  <!--APEX_JSON.PARSE Procedure Signature 1-->
+  <row>
+    <key>parse1</key>
+    <value>apex_json.parse (
+  p_values => '[]',
+  p_source => '[]',
+  p_strict => [true]
+);</value>
+  </row>
+  <!--APEX_JSON.PARSE Procedure Signature 2-->
+  <row>
+    <key>parse2</key>
+    <value>apex_json.parse (
+  p_source => '[]',
+  p_strict => [true]
+);</value>
+  </row>
+  <!--APEX_JSON.STRINGIFY Function Signature 1-->
+  <!--APEX_JSON.STRINGIFY Function Signature 2 (NUMBER)-->
+  <!--APEX_JSON.STRINGIFY Function Signature 4 (BOOLEAN)-->
+  <row>
+    <key>stringify1</key>
+    <value>apex_json.stringify (
+  p_value => []
+);</value>
+  </row>
+  <!--APEX_JSON.STRINGIFY Function Signature 3-->
+  <row>
+    <key>stringify2</key>
+    <value>apex_json.stringify (
+  p_value  => '[]',
+  p_format => [apex_json.c_date_iso8601]
+);</value>
+  </row>
+  <!--APEX_JSON.TO_MEMBER_NAME Function-->
+  <row>
+    <key>to_member_name</key>
+    <value>apex_json.to_member_name (
+  p_string => '[]'
+);</value>
+  </row>
+  <!--APEX_JSON.TO_XMLTYPE Function-->
+  <row>
+    <key>to_xmltype</key>
+    <value>apex_json.to_xmltype (
+  p_source => '[]',
+  p_strict => [true]
+);</value>
+  </row>
+  <!--APEX_JSON.TO_XMLTYPE_SQL Function-->
+  <row>
+    <key>to_xmltype_sql</key>
+    <value>apex_json.to_xmltype_sql (
+  p_source => '[]',
+  p_strict => [true]
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 1 (VARCHAR2)-->
+  <!--APEX_JSON.WRITE Procedure Signature 2 (CLOB)-->
+  <!--APEX_JSON.WRITE Procedure Signature 3 (NUMBER)-->
+  <!--APEX_JSON.WRITE Procedure Signature 5 (BOOLEAN)-->
+  <!--APEX_JSON.WRITE Procedure Signature 6 (SYS.XMLTYPE)-->
+  <row>
+    <key>write1</key>
+    <value>apex_json.write (
+  p_value => []
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 4-->
+  <row>
+    <key>write2</key>
+    <value>apex_json.write (
+  p_value  => '[]',
+  p_format => [apex_json.c_date_iso8601]
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 7-->
+  <row>
+    <key>write3</key>
+    <value>apex_json.write (
+  p_cursor => '[]'
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 8 (VARCHAR2)-->
+  <!--APEX_JSON.WRITE Procedure Signature 9 (CLOB)-->
+  <!--APEX_JSON.WRITE Procedure Signature 10 (NUMBER)-->
+  <!--APEX_JSON.WRITE Procedure Signature 12 (BOOLEAN)-->
+  <!--APEX_JSON.WRITE Procedure Signature 14 (SYS.XMLTYPE)-->
+  <!--APEX_JSON.WRITE Procedure Signature 17 (APEX_T_VARCHAR2)-->
+  <!--APEX_JSON.WRITE Procedure Signature 18 (APEX_T_NUMBER)-->
+  <row>
+    <key>write4</key>
+    <value>apex_json.write (
+  p_name       => '[]',
+  p_value      => [],
+  p_write_null => [false]
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 11-->
+  <row>
+    <key>write5</key>
+    <value>apex_json.write (
+  p_name       => '[]',
+  p_value      => '[]',
+  p_format     => [apex_json.c_date_iso8601],
+  p_write_null => [false]
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 13-->
+  <row>
+    <key>write6</key>
+    <value>apex_json.write (
+  p_name   => '[]',
+  p_cursor => '[]'
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 15-->
+  <row>
+    <key>write7</key>
+    <value>apex_json.write (
+  p_value => '[]',
+  p_path  => '[.]',
+  p0      => [null],
+  p1      => [null],
+  p2      => [null],
+  p3      => [null],
+  p4      => [null]
+);</value>
+  </row>
+  <!--APEX_JSON.WRITE Procedure Signature 16-->
+  <row>
+    <key>write8</key>
+    <value>apex_json.write (
+  p_name       => '[]',
+  p_value      => '[]',
+  p_path       => '[.]',
+  p0           => [null],
+  p1           => [null],
+  p2           => [null],
+  p3           => [null],
+  p4           => [null],
+  p_write_null => [false]
+);</value>
+  </row>
+  <!--APEX_JWT.ENCODE Function-->
+  <row>
+    <key>encode</key>
+    <value>apex_jwt.encode (
+  p_iss           => [null],
+  p_sub           => [null],
+  p_aud           => [null],
+  p_nbf_ts        => [null],
+  p_iat_ts        => [systimestamp],
+  p_exp_sec       => [null],
+  p_jti           => [null],
+  p_other_claims  => [null],
+  p_signature_key => [null]
+);</value>
+  </row>
+  <!--APEX_JWT.DECODE Function-->
+  <row>
+    <key>decode</key>
+    <value>apex_jwt.decode (
+  p_value         => '[]',
+  p_signature_key => [null]
+);</value>
+  </row>
+  <!--APEX_JWT.VALIDATE Procedure-->
+  <row>
+    <key>validate</key>
+    <value>apex_jwt.validate (
+  p_token          => '[]',
+  p_iss            => [null],
+  p_aud            => [null],
+  p_leeway_seconds => [0]
+);</value>
+  </row>
+  <!--APEX_LANG.CREATE_LANGUAGE_MAPPING Procedure-->
+  <row>
+    <key>create_language_mapping</key>
+    <value>apex_lang.create_language_mapping (
+  p_application_id             => [],
+  p_language                   => '[]',
+  p_translation_application_id => []
+);</value>
+  </row>
+  <!--APEX_LANG.DELETE_LANGUAGE_MAPPING Procedure-->
+  <row>
+    <key>delete_language_mapping</key>
+    <value>apex_lang.delete_language_mapping (
+  p_application_id => [],
+  p_language       => '[]'
+);</value>
+  </row>
+  <!--APEX_LANG.EMIT_LANGUAGE_SELECTOR_LIST Procedure-->
+  <row>
+    <key>emit_language_selector_list</key>
+    <value>apex_lang.emit_language_selector_list;</value>
+  </row>
+  <!--APEX_LANG.LANG Function-->
+  <row>
+    <key>lang</key>
+    <value>apex_lang.lang (
+  p_primary_text_string => [null],
+  p0                    => [null],
+  ...
+  p9                    => [null],
+  p_primary_language    => [null]
+);</value>
+  </row>
+  <!--APEX_LANG.MESSAGE Function-->
+  <row>
+    <key>message2</key>
+    <value>apex_lang.message (
+  p_name           => [null],
+  p0               => [null],
+  ...
+  p9               => [null],
+  p_lang           => [null],
+  p_application_id => [null]
+);</value>
+  </row>
+  <!--APEX_LANG.PUBLISH_APPLICATION Procedure-->
+  <row>
+    <key>publish_application</key>
+    <value>apex_lang.publish_application (
+  p_application_id => [],
+  p_language       => '[]'
+);</value>
+  </row>
+  <!--APEX_LANG.SEED_TRANSLATIONS Procedure-->
+  <row>
+    <key>seed_translations</key>
+    <value>apex_lang.seed_translations (
+  p_application_id => [],
+  p_language       => '[]'
+);</value>
+  </row>
+  <!--APEX_LANG.UPDATE_LANGUAGE_MAPPING Procedure-->
+  <row>
+    <key>update_language_mapping</key>
+    <value>apex_lang.update_language_mapping (
+  p_application_id           => [],
+  p_language                 => '[]',
+  p_new_trans_application_id => []
+);</value>
+  </row>
+  <!--APEX_LANG.UPDATE_MESSAGE Procedure-->
+  <row>
+    <key>update_message</key>
+    <value>apex_lang.update_message (
+  p_id           => [],
+  p_message_text => '[]'
+);</value>
+  </row>
+  <!--APEX_LANG.UPDATE_TRANSLATED_STRING Procedure-->
+  <row>
+    <key>update_translated_string</key>
+    <value>apex_lang.update_translated_string (
+  p_id       => [],
+  p_language => '[]',
+  p_string   => '[]'
+);</value>
+  </row>
+  <!--APEX_LDAP.AUTHENTICATE Function-->
+  <row>
+    <key>authenticate</key>
+    <value>apex_ldap.authenticate (
+  p_username    => [null],
+  p_password    => [null],
+  p_search_base => '[]',
+  p_host        => '[]',
+  p_port        => '[389]',
+  p_use_ssl     => '[N]'
+);</value>
+  </row>
+  <!--APEX_LDAP.GET_ALL_USER_ATTRIBUTES Procedure-->
+  <row>
+    <key>get_all_user_attributes</key>
+    <value>apex_ldap.get_all_user_attributes (
+  p_username         => [null],
+  p_pass             => [null],
+  p_auth_base        => [null],
+  p_host             => '[]',
+  p_port             => '[389]',
+  p_use_ssl          => '[N]',
+  p_attributes       => '[]',
+  p_attribute_values => '[]'
+);</value>
+  </row>
+  <!--APEX_LDAP.GET_USER_ATTRIBUTES Procedure-->
+  <row>
+    <key>get_user_attributes</key>
+    <value>apex_ldap.get_user_attributes (
+  p_username         => [null],
+  p_pass             => [null],
+  p_auth_base        => '[]',
+  p_host             => '[]',
+  p_port             => '[389]',
+  p_use_ssl          => '[N]',
+  p_attributes       => '[]',
+  p_attribute_values => '[]'
+);</value>
+  </row>
+  <!--APEX_LDAP.IS_MEMBER Function-->
+  <row>
+    <key>is_member</key>
+    <value>apex_ldap.is_member (
+  p_username   => '[]',
+  p_pass       => [null],
+  p_auth_base  => '[]',
+  p_host       => '[]',
+  p_port       => '[389]',
+  p_use_ssl    => '[N]',
+  p_group      => '[]',
+  p_group_base => '[]'
+);</value>
+  </row>
+  <!--APEX_LDAP.MEMBER_OF Function-->
+  <row>
+    <key>member_of</key>
+    <value>apex_ldap.member_of (
+  p_username  => [null],
+  p_pass      => [null],
+  p_auth_base => '[]',
+  p_host      => '[]',
+  p_port      => '[389]',
+  p_use_ssl   => '[N]'
+);</value>
+  </row>
+  <!--APEX_LDAP.MEMBER_OF2 Function-->
+  <row>
+    <key>member_of2</key>
+    <value>apex_ldap.member_of2 (
+  p_username  => [null],
+  p_pass      => [null],
+  p_auth_base => '[]',
+  p_host      => '[]',
+  p_port      => '[389]',
+  p_use_ssl   => '[N]'
+);</value>
+  </row>
+  <!--APEX_LDAP.SEARCH Function-->
+  <row>
+    <key>search</key>
+    <value>apex_ldap.search (
+  p_username        => [null],
+  p_pass            => [null],
+  p_auth_base       => [null],
+  p_host            => '[]',
+  p_port            => [389],
+  p_use_ssl         => '[N]',
+  p_search_base     => '[]',
+  p_search_filter   => '[]',
+  p_scope           => [sys.dbms_ldap.scope_subtree],
+  p_timeout_sec     => [3],
+  p_attribute_names => '[]'
+);</value>
+  </row>
+  <!--APEX_MAIL.ADD_ATTACHMENT Procedure-->
+  <row>
+    <key>add_attachment</key>
+    <value>apex_mail.add_attachment (
+  p_mail_id    => [],
+  p_attachment => '[]',
+  p_filename   => '[]',
+  p_mime_type  => '[]'
+);</value>
+  </row>
+  <!--APEX_MAIL.GET_IMAGES_URL Function-->
+  <row>
+    <key>get_images_url</key>
+    <value>apex_mail.get_images_url;</value>
+  </row>
+  <!--APEX_MAIL.GET_INSTANCE_URL Function-->
+  <row>
+    <key>get_instance_url</key>
+    <value>apex_mail.get_instance_url;</value>
+  </row>
+  <!--APEX_MAIL.PREPARE_TEMPLATE Procedure-->
+  <row>
+    <key>prepare_template</key>
+    <value>apex_mail.prepare_template (
+  p_static_id      => '[]',
+  p_placeholders   => '[]',
+  p_application_id => [],
+  p_subject        => '[]',
+  p_html           => '[]',
+  p_text           => '[]'
+);</value>
+  </row>
+  <!--APEX_MAIL.PUSH_QUEUE Procedure-->
+  <row>
+    <key>push_queue</key>
+    <value>apex_mail.push_queue;</value>
+  </row>
+  <!--APEX_MAIL.SEND Procedure Signature 1-->
+  <!--APEX_MAIL.SEND Function Signature 1-->
+  <row>
+    <key>send1</key>
+    <value>apex_mail.send (
+  p_template_static_id => '[]',
+  p_placeholders       => '[]',
+  p_to                 => '[]',
+  p_cc                 => [null],
+  p_bcc                => [null],
+  p_from               => [null],
+  p_replyto            => [null],
+  p_application_id     => [wwv_flow_security.g_flow_id]
+);</value>
+  </row>
+  <!--APEX_MAIL.SEND Procedure Signature 2-->
+  <!--APEX_MAIL.SEND Function Signature 2-->
+  <row>
+    <key>send2</key>
+    <value>apex_mail.send (
+  p_to        => '[]',
+  p_from      => '[]',
+  p_body      => '[]',
+  p_body_html => [null],
+  p_subj      => [null],
+  p_cc        => [null],
+  p_bcc       => [null],
+  p_replyto   => '[]'
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.DEINSTALL Procedure Signature 1-->
+  <row>
+    <key>deinstall_app_id</key>
+    <value>apex_pkg_app_install.deinstall (
+  p_app_id => []
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.DEINSTALL Procedure Signature 2-->
+  <row>
+    <key>deinstall_app_name</key>
+    <value>apex_pkg_app_install.deinstall (
+  p_app_name => '[]'
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.INSTALL Function Signature 1-->
+  <row>
+    <key>install_app_id</key>
+    <value>apex_pkg_app_install.install (
+  p_app_id              => [],
+  p_authentication_type => [null],
+  p_schema              => [null]
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.INSTALL Function Signature 2-->
+  <row>
+    <key>install_app_name</key>
+    <value>apex_pkg_app_install.install (
+  p_app_name            => '[]',
+  p_authentication_type => [null],
+  p_schema              => [null]
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.UPGRADE Procedure Signature 1-->
+  <row>
+    <key>upgrade_app_id</key>
+    <value>apex_pkg_app_install.upgrade (
+  p_app_id => []
+);</value>
+  </row>
+  <!--APEX_PKG_APP_INSTALL.UPGRADE Procedure Signature 2-->
+  <row>
+    <key>upgrade_app_name</key>
+    <value>apex_pkg_app_install.upgrade (
+  p_app_name => '[]'
+);</value>
+  </row>
+  <!--APEX_PAGE.IS_DESKTOP_UI Function-->
+  <row>
+    <key>is_desktop_ui</key>
+    <value>apex_page.is_desktop_ui;</value>
+  </row>
+  <!--APEX_PAGE.IS_JQM_SMARTPHONE_UI Function-->
+  <row>
+    <key>is_jqm_smartphone_ui</key>
+    <value>apex_page.is_jqm_smartphone_ui;</value>
+  </row>
+  <!--APEX_PAGE.IS_JQM_TABLET_UI Function-->
+  <row>
+    <key>is_jqm_tablet_ui</key>
+    <value>apex_page.is_jqm_tablet_ui;</value>
+  </row>
+  <!--APEX_PAGE.GET_UI_TYPE Function-->
+  <row>
+    <key>get_ui_type</key>
+    <value>apex_page.get_ui_type;</value>
+  </row>
+  <!--APEX_PAGE.IS_READ_ONLY Function-->
+  <row>
+    <key>is_read_only1</key>
+    <value>apex_page.is_read_only;</value>
+  </row>
+  <!--APEX_PAGE.GET_PAGE_MODE Function-->
+  <row>
+    <key>get_page_mode</key>
+    <value>apex_page.get_page_mode (
+  p_application_id => [],
+  p_page_id        => []
+);</value>
+  </row>
+  <!--APEX_PAGE.PURGE_CACHE Procedure-->
+  <row>
+    <key>purge_cache1</key>
+    <value>apex_page.purge_cache (
+  p_application_id       => [apex.g_flow_id],
+  p_page_id              => [apex.g_flow_step_id],
+  p_user_name            => [null],
+  p_current_session_only => [false]
+);</value>
+  </row>
+  <!--APEX_PAGE.GET_URL Function-->
+  <row>
+    <key>get_url</key>
+    <value>apex_page.get_url (
+  p_application      => [null],
+  p_page             => [null],
+  p_session          => [apex.g_instance],
+  p_request          => [null],
+  p_debug            => [null],
+  p_clear_cache      => [null],
+  p_items            => [null],
+  p_values           => [null],
+  p_printer_friendly => [null],
+  p_trace            => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN.GET_AJAX_IDENTIFIER Function-->
+  <row>
+    <key>get_ajax_identifier</key>
+    <value>apex_plugin.get_ajax_identifier;</value>
+  </row>
+  <!--APEX_PLUGIN.GET_INPUT_NAME_FOR_PAGE_ITEM Function-->
+  <row>
+    <key>get_input_name_for_page_item</key>
+    <value>apex_plugin.get_input_name_for_page_item (
+  p_is_multi_value => []
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.CLEAR_COMPONENT_VALUES Procedure-->
+  <row>
+    <key>clear_component_values</key>
+    <value>apex_plugin_util.clear_component_values;</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_DYNAMIC_ACTION Procedure-->
+  <row>
+    <key>debug_dynamic_action</key>
+    <value>apex_plugin_util.debug_dynamic_action (
+  p_plugin         => '[]',
+  p_dynamic_action => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_PAGE_ITEM Procedure Signature 1-->
+  <row>
+    <key>debug_page_item1</key>
+    <value>apex_plugin_util.debug_page_item (
+  p_plugin    => '[]',
+  p_page_item => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_PAGE_ITEM Procedure Signature 2-->
+  <row>
+    <key>debug_page_item2</key>
+    <value>apex_plugin_util.debug_page_item (
+  p_plugin              => '[]',
+  p_page_item           => '[]',
+  p_value               => '[]',
+  p_is_readonly         => [],
+  p_is_printer_friendly => []
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_PROCESS Procedure-->
+  <row>
+    <key>debug_process</key>
+    <value>apex_plugin_util.debug_process (
+  p_plugin  => '[]',
+  p_process => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_REGION Procedure Signature 1-->
+  <row>
+    <key>debug_region1</key>
+    <value>apex_plugin_util.debug_region (
+  p_plugin => '[]',
+  p_region => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.DEBUG_REGION Procedure Signature 2-->
+  <row>
+    <key>debug_region2</key>
+    <value>apex_plugin_util.debug_region (
+  p_plugin              => '[]',
+  p_region              => '[]',
+  p_is_printer_friendly => []
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.ESCAPE Function-->
+  <row>
+    <key>escape2</key>
+    <value>apex_plugin_util.escape (
+  p_value  => '[]',
+  p_escape => []
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.EXECUTE_PLSQL_CODE Procedure-->
+  <row>
+    <key>execute_plsql_code</key>
+    <value>apex_plugin_util.execute_plsql_code (
+  p_plsql_code => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_ATTRIBUTE_AS_NUMBER Function-->
+  <row>
+    <key>get_attribute_as_number</key>
+    <value>apex_plugin_util.get_attribute_as_number (
+  p_value           => '[]',
+  p_attribute_label => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DATA Function Signature 1-->
+  <row>
+    <key>get_data_column_no</key>
+    <value>apex_plugin_util.get_data (
+  p_sql_statement    => '[]',
+  p_min_columns      => [],
+  p_max_columns      => [],
+  p_component_name   => '[]',
+  p_search_type      => apex_plugin_util.c_search_[], /*c_search_contains_case, c_search_contains_ignore, c_search_exact_case, c_search_exact_ignore*/
+  p_search_column_no => '[2]',
+  p_search_string    => [null],
+  p_first_row        => [null],
+  p_max_rows         => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DATA Function Signature 2-->
+  <row>
+    <key>get_data_column_name</key>
+    <value>apex_plugin_util.get_data (
+  p_sql_statement      => '[]',
+  p_min_columns        => [],
+  p_max_columns        => [],
+  p_component_name     => '[]',
+  p_search_type        => apex_plugin_util.c_search_[], /*c_search_contains_case, c_search_contains_ignore, c_search_exact_case, c_search_exact_ignore*/
+  p_search_column_name => [null],
+  p_search_string      => [null],
+  p_first_row          => [null],
+  p_max_rows           => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DATA2 Function Signature 1-->
+  <row>
+    <key>get_data2_column_no</key>
+    <value>apex_plugin_util.get_data2 (
+  p_sql_statement    => '[]',
+  p_min_columns      => [],
+  p_max_columns      => [],
+  p_data_type_list   => [apex_plugin_util.c_data_type_list],
+  p_component_name   => '[]',
+  p_search_type      => apex_plugin_util.c_search_[], /*c_search_contains_case, c_search_contains_ignore, c_search_exact_case, c_search_exact_ignore*/
+  p_search_column_no => '[2]',
+  p_search_string    => [null],
+  p_first_row        => [null],
+  p_max_rows         => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DATA2 Function Signature 2-->
+  <row>
+    <key>get_data2_column_name</key>
+    <value>apex_plugin_util.get_data2 (
+  p_sql_statement      => '[]',
+  p_min_columns        => [],
+  p_max_columns        => [],
+  p_data_type_list     => [apex_plugin_util.c_data_type_list],
+  p_component_name     => '[]',
+  p_search_type        => apex_plugin_util.c_search_[], /*c_search_contains_case, c_search_contains_ignore, c_search_exact_case, c_search_exact_ignore*/
+  p_search_column_name => [null],
+  p_search_string      => [null],
+  p_first_row          => [null],
+  p_max_rows           => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DISPLAY_DATA Function Signature 1-->
+  <row>
+    <key>get_display_data1</key>
+    <value>apex_plugin_util.get_display_data (
+  p_sql_statement     => '[]',
+  p_min_columns       => [],
+  p_max_columns       => [],
+  p_component_name    => '[]',
+  p_display_column_no => [1],
+  p_search_column_no  => [2],
+  p_search_string     => [null],
+  p_display_extra     => [true]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_DISPLAY_DATA Function Signature 2-->
+  <row>
+    <key>get_display_data2</key>
+    <value>apex_plugin_util.get_display_data (
+  p_sql_statement     => '[]',
+  p_min_columns       => [],
+  p_max_columns       => [],
+  p_component_name    => '[]',
+  p_display_column_no => [1],
+  p_search_column_no  => [2],
+  p_search_value_list => '[]',
+  p_display_extra     => [true]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_ELEMENT_ATTRIBUTES Function-->
+  <row>
+    <key>get_element_attributes</key>
+    <value>apex_plugin_util.get_element_attributes (
+  p_item                => '[]',
+  p_name                => [null],
+  p_default_class       => [null],
+  p_add_id              => [true],
+  p_add_labelledby      => [true],
+  p_aria_describedby_id => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_PLSQL_EXPRESSION_RESULT Function-->
+  <row>
+    <key>get_plsql_expression_result</key>
+    <value>apex_plugin_util.get_plsql_expression_result (
+  p_plsql_expression => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_PLSQL_FUNCTION_RESULT Function-->
+  <row>
+    <key>get_plsql_function_result</key>
+    <value>apex_plugin_util.get_plsql_function_result (
+  p_plsql_expression => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_POSITION_IN_LIST Function-->
+  <row>
+    <key>get_position_in_list</key>
+    <value>apex_plugin_util.get_position_in_list (
+  p_list  => '[]',
+  p_value => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_SEARCH_STRING Function-->
+  <row>
+    <key>get_search_string</key>
+    <value>apex_plugin_util.get_search_string (
+  p_search_type   => apex_plugin_util.c_search_[],
+  p_search_string => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.GET_VALUE_AS_VARCHAR2 Function-->
+  <row>
+    <key>get_value_as_varchar2</key>
+    <value>apex_plugin_util.get_value_as_varchar2 (
+  p_data_type   => '[]',
+  p_value       => '[]',
+  p_format_mask => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.IS_EQUAL Function-->
+  <row>
+    <key>is_equal</key>
+    <value>apex_plugin_util.is_equal (
+  p_value1 => '[]',
+  p_value2 => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PAGE_ITEM_NAMES_TO_JQUERY Function-->
+  <row>
+    <key>page_item_names_to_jquery</key>
+    <value>apex_plugin_util.page_item_names_to_jquery (
+  p_page_item_names => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_DISPLAY_ONLY Procedure-->
+  <row>
+    <key>print_display_only</key>
+    <value>apex_plugin_util.print_display_only (
+  p_item_name        => '[]',
+  p_display_value    => '[]',
+  p_show_line_breaks => [],
+  p_attributes       => '[]',
+  p_id_postfix       => '[_DISPLAY]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_ESCAPED_VALUE Procedure-->
+  <row>
+    <key>print_escaped_value</key>
+    <value>apex_plugin_util.print_escaped_value (
+  p_value => '[]'
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_HIDDEN_IF_READONLY Procedure-->
+  <row>
+    <key>print_hidden_if_readonly</key>
+    <value>apex_plugin_util.print_hidden_if_readonly (
+  p_item_name           => '[]',
+  p_value               => '[]',
+  p_is_readonly         => [],
+  p_is_printer_friendly => [],
+  p_id_postfix          => [null]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_JSON_HTTP_HEADER Procedure-->
+  <row>
+    <key>print_json_http_header</key>
+    <value>apex_plugin_util.print_json_http_header;</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_LOV_AS_JSON Procedure-->
+  <row>
+    <key>print_lov_as_json</key>
+    <value>apex_plugin_util.print_lov_as_json (
+  p_sql_statement         => '[]',
+  p_component_name        => '[]',
+  p_escape                => [],
+  p_replace_substitutions => [false]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.PRINT_OPTION Procedure-->
+  <row>
+    <key>print_option</key>
+    <value>apex_plugin_util.print_option (
+  p_display_value => '[]',
+  p_return_value  => '[]',
+  p_is_selected   => [],
+  p_attributes    => '[]',
+  p_escape        => [true]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.REPLACE_SUBSTITUTIONS Function-->
+  <row>
+    <key>replace_substitutions</key>
+    <value>apex_plugin_util.replace_substitutions (
+  p_value  => '[]',
+  p_escape => [true]
+);</value>
+  </row>
+  <!--APEX_PLUGIN_UTIL.SET_COMPONENT_VALUES Procedure-->
+  <row>
+    <key>set_component_values</key>
+    <value>apex_plugin_util.set_component_values (
+  p_column_value_list => '[]',
+  p_row_num           => []
+);</value>
+  </row>
+  <!--APEX_REGION.IS_READ_ONLY Function-->
+  <row>
+    <key>is_read_only2</key>
+    <value>apex_region.is_read_only;</value>
+  </row>
+  <!--APEX_REGION.PURGE_CACHE Procedure-->
+  <row>
+    <key>purge_cache2</key>
+    <value>apex_region.purge_cache (
+  p_application_id       => [apex.g_flow_id],
+  p_page_id              => [null],
+  p_region_id            => [null],
+  p_current_session_only => [false]
+);</value>
+  </row>
+  <!--APEX_SESSION.SET_DEBUG Procedure-->
+  <row>
+    <key>set_debug</key>
+    <value>apex_session.set_debug (
+  p_session_id => [apex.g_instance],
+  p_level      => [apex_debug.c_log_level_info]
+);</value>
+  </row>
+  <!--APEX_SESSION.SET_TRACE Procedure-->
+  <row>
+    <key>set_trace</key>
+    <value>apex_session.set_trace (
+  p_session_id => [apex.g_instance],
+  p_mode       => '[]'
+);</value>
+  </row>
+  <!--APEX_SESSION.CREATE_SESSION Procedure-->
+  <row>
+    <key>create_session</key>
+    <value>apex_session.create_session (
+  p_app_id   => [],
+  p_page_id  => [],
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_SESSION.DELETE_SESSION Procedure-->
+  <row>
+    <key>delete_session</key>
+    <value>apex_session.delete_session (
+  p_session_id => [wwv_flow.g_instance]
+);</value>
+  </row>
+  <!--APEX_SESSION.ATTACH Procedure-->
+  <row>
+    <key>attach</key>
+    <value>apex_session.attach (
+  p_app_id     => [],
+  p_page_id    => [],
+  p_session_id => []
+);</value>
+  </row>
+  <!--APEX_SESSION.DETACH Procedure-->
+  <row>
+    <key>detach</key>
+    <value>apex_session.detach;</value>
+  </row>
+  <!--APEX_SPATIAL.CHANGE_GEOM_METADATA Procedure-->
+  <row>
+    <key>change_geom_metadata</key>
+    <value>apex_spatial.change_geom_metadata (
+  p_table_name      => '[]',
+  p_column_name     => '[]',
+  p_new_table_name  => [null],
+  p_new_column_name => [null],
+  p_diminfo         => '[]',
+  p_srid            => '[]'
+);</value>
+  </row>
+  <!--APEX_SPATIAL.CIRCLE_POLYGON Function-->
+  <row>
+    <key>circle_polygon</key>
+    <value>apex_spatial.circle_polygon (
+  p_lon           => [],
+  p_lat           => [],
+  p_radius        => [],
+  p_arc_tolerance => [20],
+  p_srid          => [apex_spatial.c_wgs_84]
+);</value>
+  </row>
+  <!--APEX_SPATIAL.DELETE_GEOM_METADATA Procedure-->
+  <row>
+    <key>delete_geom_metadata</key>
+    <value>apex_spatial.delete_geom_metadata (
+  p_table_name  => '[]',
+  p_column_name => '[]',
+  p_drop_index  => [false]
+);</value>
+  </row>
+  <!--APEX_SPATIAL.INSERT_GEOM_METADATA Procedure-->
+  <row>
+    <key>insert_geom_metadata</key>
+    <value>apex_spatial.insert_geom_metadata (
+  p_table_name        => '[]',
+  p_column_name       => '[]',
+  p_diminfo           => '[]',
+  p_srid              => '[]',
+  p_create_index_name => [null]
+);</value>
+  </row>
+  <!--APEX_SPATIAL.INSERT_GEOM_METADATA_LONLAT Procedure-->
+  <row>
+    <key>insert_geom_metadata_lonlat</key>
+    <value>apex_spatial.insert_geom_metadata_lonlat (
+  p_table_name        => '[]',
+  p_column_name       => '[]',
+  p_tolerance         => [1],
+  p_create_index_name => [null]
+);</value>
+  </row>
+  <!--APEX_SPATIAL.POINT Function-->
+  <row>
+    <key>point</key>
+    <value>apex_spatial.point (
+  p_lon  => [],
+  p_lat  => [],
+  p_srid => [apex_spatial.c_wgs_84]
+);</value>
+  </row>
+  <!--APEX_SPATIAL.RECTANGLE Function-->
+  <row>
+    <key>rectangle</key>
+    <value>apex_spatial.rectangle (
+  p_lon1 => [],
+  p_lat1 => [],
+  p_lon2 => [],
+  p_lat2 => [],
+  p_srid => [apex_spatial.c_wgs_84]
+);</value>
+  </row>
+  <!--APEX_STRING.FORMAT Function-->
+  <row>
+    <key>format</key>
+    <value>apex_string.format (
+  p_message    => '[]',
+  p0           => [null],
+  ...
+  p19          => [null],
+  p_max_length => [1000]
+);</value>
+  </row>
+  <!--APEX_STRING.GET_INITIALS Function-->
+  <row>
+    <key>get_initials</key>
+    <value>apex_string.get_initials (
+  p_str => '[]',
+  p_cnt => [2]
+);</value>
+  </row>
+  <!--APEX_STRING.GREP Function Signature 1-->
+  <row>
+    <key>grep1</key>
+    <value>apex_string.grep (
+  p_table         => apex_t_varchar2('[]'),
+  p_pattern       => '[]',
+  p_modifier      => [null],
+  p_subexpression => '[0]',
+  p_limit         => [null]
+);</value>
+  </row>
+  <!--APEX_STRING.GREP Function Signature 2 (VARCHAR2)-->
+  <!--APEX_STRING.GREP Function Signature 3 (CLOB)-->
+  <row>
+    <key>grep2</key>
+    <value>apex_string.grep (
+  p_str           => '[]',
+  p_pattern       => '[]',
+  p_modifier      => [null],
+  p_subexpression => '[0]',
+  p_limit         => [null]
+);</value>
+  </row>
+  <!--APEX_STRING.JOIN_CLOB Function-->
+  <row>
+    <key>join_clob</key>
+    <value>apex_string.join_clob (
+  p_table => apex_t_varchar2('[]'),
+  p_sep   => [apex_application.LF],
+  p_dur   => [sys.dbms_lob.call]
+);</value>
+  </row>
+  <!--APEX_STRING.JOIN Function Signature 1-->
+  <!--APEX_STRING.JOIN Function Signature 2-->
+  <row>
+    <key>join</key>
+    <value>apex_string.join (
+  p_table => [],
+  p_sep   => [apex_application.LF]
+);</value>
+  </row>
+  <!--APEX_STRING.NEXT_CHUNK Function-->
+  <row>
+    <key>next_chunk</key>
+    <value>apex_string.next_chunk (
+  p_str    => '[]',
+  p_chunk  => '[]',
+  p_offset => [],
+  p_amount => [8191]
+);</value>
+  </row>
+  <!--APEX_STRING.PLIST_DELETE Procedure-->
+  <row>
+    <key>plist_delete</key>
+    <value>apex_string.plist_delete (
+  p_table => apex_t_varchar2('[]'),
+  p_key   => '[]'
+);</value>
+  </row>
+  <!--APEX_STRING.PLIST_GET Function-->
+  <row>
+    <key>plist_get</key>
+    <value>apex_string.plist_get (
+  p_table => apex_t_varchar2('[]'),
+  p_key   => '[]'
+);</value>
+  </row>
+  <!--APEX_STRING.PLIST_PUT Function-->
+  <row>
+    <key>plist_put</key>
+    <value>apex_string.plist_put (
+  p_table => apex_t_varchar2('[]'),
+  p_key   => '[]',
+  p_value => '[]'
+);</value>
+  </row>
+  <!--APEX_STRING.PUSH Procedure Signature 1-->
+  <!--APEX_STRING.PUSH Procedure Signature 2-->
+  <!--APEX_STRING.PUSH Procedure Signature 3-->
+  <row>
+    <key>push</key>
+    <value>apex_string.push (
+  p_table => apex_t_varchar2('[]'),
+  p_value => []
+);</value>
+  </row>
+  <!--APEX_STRING.SHUFFLE Function-->
+  <!--APEX_STRING.SHUFFLE Procedure-->
+  <row>
+    <key>shuffle</key>
+    <value>apex_string.shuffle (
+  p_table => apex_t_varchar2('[]')
+);</value>
+  </row>
+  <!--APEX_STRING.SPLIT Function Signature 1-->
+  <row>
+    <key>split1</key>
+    <value>apex_string.split (
+  p_str   => '[]',
+  p_sep   => [apex_application.LF],
+  p_limit => [null]
+);</value>
+  </row>
+  <!--APEX_STRING.SPLIT Function Signature 2-->
+  <row>
+    <key>split2</key>
+    <value>apex_string.split (
+  p_str => '[]',
+  p_sep => [apex_application.LF]
+);</value>
+  </row>
+  <!--APEX_STRING.SPLIT_NUMBERS Function-->
+  <row>
+    <key>split_numbers</key>
+    <value>apex_string.split_numbers (
+  p_str => '[]',
+  p_sep => [apex_application.LF]
+);</value>
+  </row>
+  <!--APEX_THEME.CLEAR_ALL_USERS_STYLE Procedure-->
+  <row>
+    <key>clear_all_users_style</key>
+    <value>apex_theme.clear_all_users_style (
+  p_application_id => [],
+  p_theme_number   => []
+);</value>
+  </row>
+  <!--APEX_THEME.CLEAR_USER_STYLE Procedure-->
+  <row>
+    <key>clear_user_style</key>
+    <value>apex_theme.clear_user_style (
+  p_application_id => [],
+  p_user           => '[]',
+  p_theme_number   => []
+);</value>
+  </row>
+  <!--APEX_THEME.DISABLE_USER_STYLE Procedure-->
+  <row>
+    <key>disable_user_style</key>
+    <value>apex_theme.disable_user_style (
+  p_application_id => [],
+  p_theme_number   => []
+);</value>
+  </row>
+  <!--APEX_THEME.ENABLE_USER_STYLE Procedure-->
+  <row>
+    <key>enable_user_style</key>
+    <value>apex_theme.enable_user_style (
+  p_application_id => [],
+  p_theme_number   => []
+);</value>
+  </row>
+  <!--APEX_THEME.GET_USER_STYLE Function-->
+  <row>
+    <key>get_user_style</key>
+    <value>apex_theme.get_user_style (
+  p_application_id => [],
+  p_user           => '[]',
+  p_theme_number   => []
+);</value>
+  </row>
+  <!--APEX_THEME.SET_CURRENT_STYLE Procedure-->
+  <row>
+    <key>set_current_style</key>
+    <value>apex_theme.set_current_style (
+  p_theme_number => [],
+  p_id           => '[]'
+);</value>
+  </row>
+  <!--APEX_THEME.SET_SESSION_STYLE Procedure-->
+  <row>
+    <key>set_session_style</key>
+    <value>apex_theme.set_session_style (
+  p_theme_number => [],
+  p_name         => '[]'
+);</value>
+  </row>
+  <!--APEX_THEME.SET_SESSION_STYLE_CSS Procedure-->
+  <row>
+    <key>set_session_style_css</key>
+    <value>apex_theme.set_session_style_css (
+  p_theme_number  => [],
+  p_css_file_urls => '[]'
+);</value>
+  </row>
+  <!--APEX_THEME.SET_USER_STYLE Procedure-->
+  <row>
+    <key>set_user_style</key>
+    <value>apex_theme.set_user_style (
+  p_application_id => [],
+  p_user           => '[]',
+  p_theme_number   => [],
+  p_id             => []
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.ADD_AD_COLUMN Procedure-->
+  <row>
+    <key>add_ad_column</key>
+    <value>apex_ui_default_update.add_ad_column (
+  p_column_name          => '[]',
+  p_label                => [null],
+  p_help_text            => [null],
+  p_format_mask          => [null],
+  p_default_value        => [null],
+  p_form_format_mask     => [null],
+  p_form_display_width   => [null],
+  p_form_display_height  => [null],
+  p_form_data_type       => [null],
+  p_report_format_mask   => [null],
+  p_report_col_alignment => [null],
+  p_syn_name1            => [null],
+  p_syn_name2            => [null],
+  p_syn_name3            => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.ADD_AD_SYNONYM Procedure-->
+  <row>
+    <key>add_ad_synonym</key>
+    <value>apex_ui_default_update.add_ad_synonym (
+  p_column_name => '[]',
+  p_syn_name    => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.DEL_AD_COLUMN Procedure-->
+  <row>
+    <key>del_ad_column</key>
+    <value>apex_ui_default_update.del_ad_column (
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.DEL_AD_SYNONYM Procedure-->
+  <row>
+    <key>del_ad_synonym</key>
+    <value>apex_ui_default_update.del_ad_synonym (
+  p_syn_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.DEL_COLUMN Procedure-->
+  <row>
+    <key>del_column</key>
+    <value>apex_ui_default_update.del_column (
+  p_table_name  => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.DEL_GROUP Procedure-->
+  <row>
+    <key>del_group</key>
+    <value>apex_ui_default_update.del_group (
+  p_table_name => '[]',
+  p_group_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.DEL_TABLE Procedure-->
+  <row>
+    <key>del_table</key>
+    <value>apex_ui_default_update.del_table (
+  p_table_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.SYNCH_TABLE Procedure-->
+  <row>
+    <key>synch_table</key>
+    <value>apex_ui_default_update.synch_table (
+  p_table_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_AD_COLUMN Procedure-->
+  <row>
+    <key>upd_ad_column</key>
+    <value>apex_ui_default_update.upd_ad_column (
+  p_column_name          => '[]',
+  p_new_column_name      => [null],
+  p_label                => [null],
+  p_help_text            => [null],
+  p_format_mask          => [null],
+  p_default_value        => [null],
+  p_form_format_mask     => [null],
+  p_form_display_width   => [null],
+  p_form_display_height  => [null],
+  p_form_data_type       => [null],
+  p_report_format_mask   => [null],
+  p_report_col_alignment => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_AD_SYNONYM Procedure-->
+  <row>
+    <key>upd_ad_synonym</key>
+    <value>apex_ui_default_update.upd_ad_synonym (
+  p_syn_name     => '[]',
+  p_new_syn_name => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_COLUMN Procedure-->
+  <row>
+    <key>upd_column</key>
+    <value>apex_ui_default_update.upd_column (
+  p_table_name         => '[]',
+  p_column_name        => '[]',
+  p_group_id           => [null],
+  p_label              => [null],
+  p_help_text          => [null],
+  p_display_in_form    => [null],
+  p_display_seq_form   => [null],
+  p_mask_form          => [null],
+  p_default_value      => [null],
+  p_required           => [null],
+  p_display_width      => [null],
+  p_max_width          => [null],
+  p_height             => [null],
+  p_display_in_report  => [null],
+  p_display_seq_report => [null],
+  p_mask_report        => [null],
+  p_alignment          => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_DISPLAY_IN_FORM Procedure-->
+  <row>
+    <key>upd_display_in_form</key>
+    <value>apex_ui_default_update.upd_display_in_form (
+  p_table_name      => '[]',
+  p_column_name     => '[]',
+  p_display_in_form => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_DISPLAY_IN_REPORT Procedure-->
+  <row>
+    <key>upd_display_in_report</key>
+    <value>apex_ui_default_update.upd_display_in_report (
+  p_table_name        => '[]',
+  p_column_name       => '[]',
+  p_display_in_report => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_FORM_REGION_TITLE Procedure-->
+  <row>
+    <key>upd_form_region_title</key>
+    <value>apex_ui_default_update.upd_form_region_title (
+  p_table_name        => '[]',
+  p_form_region_title => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_GROUP Procedure-->
+  <row>
+    <key>upd_group</key>
+    <value>apex_ui_default_update.upd_group (
+  p_table_name       => '[]',
+  p_group_name       => '[]',
+  p_new_group_name   => [null],
+  p_description      => [null],
+  p_display_sequence => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_ITEM_DISPLAY_HEIGHT Procedure-->
+  <row>
+    <key>upd_item_display_height</key>
+    <value>apex_ui_default_update.upd_item_display_height (
+  p_table_name     => '[]',
+  p_column_name    => '[]',
+  p_display_height => []
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_ITEM_DISPLAY_WIDTH Procedure-->
+  <row>
+    <key>upd_item_display_width</key>
+    <value>apex_ui_default_update.upd_item_display_width (
+  p_table_name    => '[]',
+  p_column_name   => '[]',
+  p_display_width => []
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_ITEM_FORMAT_MASK Procedure-->
+  <row>
+    <key>upd_item_format_mask</key>
+    <value>apex_ui_default_update.upd_item_format_mask (
+  p_table_name  => '[]',
+  p_column_name => '[]',
+  p_format_mask => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_ITEM_HELP Procedure-->
+  <row>
+    <key>upd_item_help</key>
+    <value>apex_ui_default_update.upd_item_help (
+  p_table_name  => '[]',
+  p_column_name => '[]',
+  p_help_text   => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_LABEL Procedure-->
+  <row>
+    <key>upd_label</key>
+    <value>apex_ui_default_update.upd_label (
+  p_table_name  => '[]',
+  p_column_name => '[]',
+  p_label       => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_REPORT_ALIGNMENT Procedure-->
+  <row>
+    <key>upd_report_alignment</key>
+    <value>apex_ui_default_update.upd_report_alignment (
+  p_table_name       => '[]',
+  p_column_name      => '[]',
+  p_report_alignment => '[]'
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_REPORT_FORMAT_MASK Procedure-->
+  <row>
+    <key>upd_report_format_mask</key>
+    <value>apex_ui_default_update.upd_report_format_mask (
+  p_table_name  => '[]',
+  p_column_name => '[]',
+  p_format_mask => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_REPORT_REGION_TITLE Procedure-->
+  <row>
+    <key>upd_report_region_title</key>
+    <value>apex_ui_default_update.upd_report_region_title (
+  p_table_name          => '[]',
+  p_report_region_title => [null]
+);</value>
+  </row>
+  <!--APEX_UI_DEFAULT_UPDATE.UPD_TABLE Procedure-->
+  <row>
+    <key>upd_table</key>
+    <value>apex_ui_default_update.upd_table (
+  p_table_name          => '[]',
+  p_form_region_title   => [null],
+  p_report_region_title => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CACHE_GET_DATE_OF_PAGE_CACHE Function-->
+  <row>
+    <key>cache_get_date_of_page_cache</key>
+    <value>apex_util.cache_get_date_of_page_cache (
+  p_application => [],
+  p_page        => []
+);</value>
+  </row>
+  <!--APEX_UTIL.CACHE_GET_DATE_OF_REGION_CACHE Function-->
+  <row>
+    <key>cache_get_date_of_region_cache</key>
+    <value>apex_util.cache_get_date_of_region_cache (
+  p_application => [],
+  p_page        => [],
+  p_region_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.CACHE_PURGE_BY_APPLICATION Procedure-->
+  <row>
+    <key>cache_purge_by_application</key>
+    <value>apex_util.cache_purge_by_application (
+  p_application => []
+);</value>
+  </row>
+  <!--APEX_UTIL.CACHE_PURGE_BY_PAGE Procedure-->
+  <row>
+    <key>cache_purge_by_page</key>
+    <value>apex_util.cache_purge_by_page (
+  p_application => [],
+  p_page        => [],
+  p_user_name   => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CACHE_PURGE_STALE Procedure-->
+  <row>
+    <key>cache_purge_stale</key>
+    <value>apex_util.cache_purge_stale (
+  p_application => []
+);</value>
+  </row>
+  <!--APEX_UTIL.CHANGE_CURRENT_USER_PW Procedure-->
+  <row>
+    <key>change_current_user_pw</key>
+    <value>apex_util.change_current_user_pw (
+  p_new_password => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.CHANGE_PASSWORD_ON_FIRST_USE Function-->
+  <row>
+    <key>change_password_on_first_use</key>
+    <value>apex_util.change_password_on_first_use (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.CLOSE_OPEN_DB_LINKS Procedure-->
+  <row>
+    <key>close_open_db_links</key>
+    <value>apex_util.close_open_db_links;</value>
+  </row>
+  <!--APEX_UTIL.CLEAR_APP_CACHE Procedure-->
+  <row>
+    <key>clear_app_cache</key>
+    <value>apex_util.clear_app_cache (
+  p_app_id => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CLEAR_PAGE_CACHE Procedure-->
+  <row>
+    <key>clear_page_cache</key>
+    <value>apex_util.clear_page_cache (
+  p_page_id => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CLEAR_USER_CACHE Procedure-->
+  <row>
+    <key>clear_user_cache</key>
+    <value>apex_util.clear_user_cache;</value>
+  </row>
+  <!--APEX_UTIL.COUNT_CLICK Procedure-->
+  <row>
+    <key>count_click</key>
+    <value>apex_util.count_click (
+  p_url       => '[]',
+  p_cat       => '[]',
+  p_id        => [null],
+  p_user      => [null],
+  p_workspace => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CREATE_USER Procedure-->
+  <row>
+    <key>create_user</key>
+    <value>apex_util.create_user (
+  p_user_id                      => [null],
+  p_user_name                    => '[]',
+  p_first_name                   => [null],
+  p_last_name                    => [null],
+  p_description                  => [null],
+  p_email_address                => [null],
+  p_web_password                 => '[]',
+  p_web_password_format          => '[CLEAR_TEXT]',
+  p_group_ids                    => [null],
+  p_developer_privs              => [null],
+  p_default_schema               => [null],
+  p_allow_access_to_schemas      => [null],
+  p_account_expiry               => [TRUNC(SYSDATE)],
+  p_account_locked               => '[N]',
+  p_failed_access_attempts       => [0],
+  p_change_password_on_first_use => '[Y]',
+  p_first_password_use_occurred  => '[N]',
+  p_attribute_01                 => [null],
+  p_attribute_02                 => [null],
+  p_attribute_03                 => [null],
+  p_attribute_04                 => [null],
+  p_attribute_05                 => [null],
+  p_attribute_06                 => [null],
+  p_attribute_07                 => [null],
+  p_attribute_08                 => [null],
+  p_attribute_09                 => [null],
+  p_attribute_10                 => [null],
+  p_allow_app_building_yn        => [null],
+  p_allow_sql_workshop_yn        => [null],
+  p_allow_websheet_dev_yn        => [null],
+  p_allow_team_development_yn    => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CREATE_USER_GROUP Procedure-->
+  <row>
+    <key>create_user_group</key>
+    <value>apex_util.create_user_group (
+  p_id                => [null],
+  p_group_name        => '[]',
+  p_security_group_id => [null],
+  p_group_desc        => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.CURRENT_USER_IN_GROUP Function Signature 1-->
+  <row>
+    <key>current_user_in_group_name</key>
+    <value>apex_util.current_user_in_group (
+  p_group_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.CURRENT_USER_IN_GROUP Function Signature 2-->
+  <row>
+    <key>current_user_in_group_id</key>
+    <value>apex_util.current_user_in_group (
+  p_group_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.CUSTOM_CALENDAR Procedure-->
+  <row>
+    <key>custom_calendar</key>
+    <value>apex_util.custom_calendar (
+  p_date_type_field => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.DELETE_USER_GROUP Procedure Signature 1-->
+  <row>
+    <key>delete_user_group_id</key>
+    <value>apex_util.delete_user_group (
+  p_group_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.DELETE_USER_GROUP Procedure Signature 2-->
+  <row>
+    <key>delete_user_group_name</key>
+    <value>apex_util.delete_user_group (
+  p_group_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.DOWNLOAD_PRINT_DOCUMENT Procedure Signature 1-->
+  <row>
+    <key>download_print_document1</key>
+    <value>apex_util.download_print_document (
+  p_file_name           => '[]',
+  p_content_disposition => '[]',
+  p_report_data         => '[]',
+  p_report_layout       => '[]',
+  p_report_layout_type  => '[xsl-fo]',
+  p_document_format     => '[pdf]',
+  p_print_server        => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.DOWNLOAD_PRINT_DOCUMENT Procedure Signature 2-->
+  <row>
+    <key>download_print_document2</key>
+    <value>apex_util.download_print_document (
+  p_file_name           => '[]',
+  p_content_disposition => '[]',
+  p_application_id      => [],
+  p_report_query_name   => '[]',
+  p_report_layout       => '[]',
+  p_report_layout_type  => '[xsl-fo]',
+  p_document_format     => '[pdf]',
+  p_print_server        => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.DOWNLOAD_PRINT_DOCUMENT Procedure Signature 3-->
+  <row>
+    <key>download_print_document3</key>
+    <value>apex_util.download_print_document (
+  p_file_name           => '[]',
+  p_content_disposition => '[]',
+  p_application_id      => [],
+  p_report_query_name   => '[]',
+  p_report_layout_name  => '[]',
+  p_report_layout_type  => '[xsl-fo]',
+  p_document_format     => '[pdf]',
+  p_print_server        => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.DOWNLOAD_PRINT_DOCUMENT Procedure Signature 4-->
+  <row>
+    <key>download_print_document4</key>
+    <value>apex_util.download_print_document (
+  p_file_name           => '[]',
+  p_content_disposition => '[]',
+  p_report_data         => '[]',
+  p_report_layout       => '[]',
+  p_report_layout_type  => '[xsl-fo]',
+  p_document_format     => '[pdf]',
+  p_print_server        => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.EDIT_USER Procedure-->
+  <row>
+    <key>edit_user</key>
+    <value>apex_util.edit_user (
+  p_user_id                      => [],
+  p_user_name                    => '[]',
+  p_first_name                   => [null],
+  p_last_name                    => [null],
+  p_web_password                 => [null],
+  p_new_password                 => [null],
+  p_email_address                => [null],
+  p_start_date                   => [null],
+  p_end_date                     => [null],
+  p_employee_id                  => [null],
+  p_allow_access_to_schemas      => [null],
+  p_person_type                  => [null],
+  p_default_schema               => [null],
+  p_group_ids                    => [null],
+  p_developer_roles              => [null],
+  p_description                  => [null],
+  p_account_expiry               => [null],
+  p_account_locked               => '[N]',
+  p_failed_access_attempts       => [0],
+  p_change_password_on_first_use => '[Y]',
+  p_first_password_use_occurred  => '[N]'
+);</value>
+  </row>
+  <!--APEX_UTIL.END_USER_ACCOUNT_DAYS_LEFT Function-->
+  <row>
+    <key>end_user_account_days_left</key>
+    <value>apex_util.end_user_account_days_left (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.EXPIRE_END_USER_ACCOUNT Procedure-->
+  <row>
+    <key>expire_end_user_account</key>
+    <value>apex_util.expire_end_user_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.EXPIRE_WORKSPACE_ACCOUNT Procedure-->
+  <row>
+    <key>expire_workspace_account</key>
+    <value>apex_util.expire_workspace_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.EXPORT_USERS Procedure-->
+  <row>
+    <key>export_users</key>
+    <value>apex_util.export_users (
+  p_export_format => '[UNIX]'
+);</value>
+  </row>
+  <!--APEX_UTIL.FETCH_APP_ITEM Function-->
+  <row>
+    <key>fetch_app_item</key>
+    <value>apex_util.fetch_app_item (
+  p_item    => '[]',
+  p_app     => [null],
+  p_session => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.FETCH_USER Procedure Signature 1-->
+  <row>
+    <key>fetch_user1</key>
+    <value>apex_util.fetch_user (
+  p_user_id                 => [],
+  p_workspace               => '[]',
+  p_user_name               => '[]',
+  p_first_name              => '[]',
+  p_last_name               => '[]',
+  p_web_password            => '[]',
+  p_email_address           => '[]',
+  p_start_date              => '[]',
+  p_end_date                => '[]',
+  p_employee_id             => '[]',
+  p_allow_access_to_schemas => '[]',
+  p_person_type             => '[]',
+  p_default_schema          => '[]',
+  p_groups                  => '[]',
+  p_developer_role          => '[]',
+  p_description             => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.FETCH_USER Procedure Signature 2-->
+  <row>
+    <key>fetch_user2</key>
+    <value>apex_util.fetch_user (
+  p_user_id        => [],
+  p_user_name      => '[]',
+  p_first_name     => '[]',
+  p_last_name      => '[]',
+  p_email_address  => '[]',
+  p_groups         => '[]',
+  p_developer_role => '[]',
+  p_description    => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.FETCH_USER Procedure Signature 3-->
+  <row>
+    <key>fetch_user3</key>
+    <value>apex_util.fetch_user (
+  p_user_id                      => [],
+  p_workspace                    => '[]',
+  p_user_name                    => '[]',
+  p_first_name                   => '[]',
+  p_last_name                    => '[]',
+  p_web_password                 => '[]',
+  p_email_address                => '[]',
+  p_start_date                   => '[]',
+  p_end_date                     => '[]',
+  p_employee_id                  => '[]',
+  p_allow_access_to_schemas      => '[]',
+  p_person_type                  => '[]',
+  p_default_schema               => '[]',
+  p_groups                       => '[]',
+  p_developer_role               => '[]',
+  p_description                  => '[]',
+  p_account_expiry               => '[]',
+  p_account_locked               => '[]',
+  p_failed_access_attempts       => '[]',
+  p_change_password_on_first_use => '[]',
+  p_first_password_use_occurred  => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.FIND_SECURITY_GROUP_ID Function-->
+  <row>
+    <key>find_security_group_id</key>
+    <value>apex_util.find_security_group_id (
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.FIND_WORKSPACE Function-->
+  <row>
+    <key>find_workspace</key>
+    <value>apex_util.find_workspace (
+  p_security_group_id => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_ACCOUNT_LOCKED_STATUS Function-->
+  <row>
+    <key>get_account_locked_status</key>
+    <value>apex_util.get_account_locked_status (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_APPLICATION_STATUS Function-->
+  <row>
+    <key>get_application_status</key>
+    <value>apex_util.get_application_status (
+  p_application_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_ATTRIBUTE Function-->
+  <row>
+    <key>get_attribute</key>
+    <value>apex_util.get_attribute (
+  p_username         => '[]',
+  p_attribute_number => []
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_AUTHENTICATION_RESULT Function-->
+  <row>
+    <key>get_authentication_result</key>
+    <value>apex_util.get_authentication_result;</value>
+  </row>
+  <!--APEX_UTIL.GET_BLOB_FILE_SRC Function-->
+  <row>
+    <key>get_blob_file_src</key>
+    <value>apex_util.get_blob_file_src (
+  p_item_name           => [null],
+  p_v1                  => [null],
+  p_v2                  => [null],
+  p_content_disposition => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_BUILD_OPTION_STATUS Function Signature 1-->
+  <row>
+    <key>get_build_option_status_id</key>
+    <value>apex_util.get_build_option_status (
+  p_application_id => [],
+  p_id             => []
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_BUILD_OPTION_STATUS Function Signature 2-->
+  <row>
+    <key>get_build_option_status_name</key>
+    <value>apex_util.get_build_option_status (
+  p_application_id    => [],
+  p_build_option_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_CURRENT_USER_ID Function-->
+  <row>
+    <key>get_current_user_id</key>
+    <value>apex_util.get_current_user_id;</value>
+  </row>
+  <!--APEX_UTIL.GET_DEFAULT_SCHEMA Function-->
+  <row>
+    <key>get_default_schema</key>
+    <value>apex_util.get_default_schema;</value>
+  </row>
+  <!--APEX_UTIL.GET_EDITION Function-->
+  <row>
+    <key>get_edition</key>
+    <value>apex_util.get_edition;</value>
+  </row>
+  <!--APEX_UTIL.GET_EMAIL Function-->
+  <row>
+    <key>get_email</key>
+    <value>apex_util.get_email (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_FEEDBACK_FOLLOW_UP Function-->
+  <row>
+    <key>get_feedback_follow_up</key>
+    <value>apex_util.get_feedback_follow_up (
+  p_feedback_id => [],
+  p_row         => [1],
+  p_template    => '[&lt;br />#CREATED_ON# (#CREATED_BY#) #FOLLOW_UP#]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_FILE Procedure-->
+  <row>
+    <key>get_file</key>
+    <value>apex_util.get_file (
+  p_file_id => '[]',
+  p_inline  => '[NO]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_FILE_ID Function-->
+  <row>
+    <key>get_file_id</key>
+    <value>apex_util.get_file_id (
+  p_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_FIRST_NAME Function-->
+  <row>
+    <key>get_first_name</key>
+    <value>apex_util.get_first_name (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_GLOBAL_NOTIFICATION Function-->
+  <row>
+    <key>get_global_notification</key>
+    <value>apex_util.get_global_notification (
+  p_application_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_GROUPS_USER_BELONGS_TO Function-->
+  <row>
+    <key>get_groups_user_belongs_to</key>
+    <value>apex_util.get_groups_user_belongs_to (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_GROUP_ID Function-->
+  <row>
+    <key>get_group_id</key>
+    <value>apex_util.get_group_id (
+  p_group_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_GROUP_NAME Function-->
+  <row>
+    <key>get_group_name</key>
+    <value>apex_util.get_group_name (
+  p_group_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_HASH Function-->
+  <row>
+    <key>get_hash</key>
+    <value>apex_util.get_hash (
+  p_values => apex_t_varchar2('[]'),
+  p_salted => [true]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_HIGH_CONTRAST_MODE_TOGGLE Function-->
+  <row>
+    <key>get_high_contrast_mode_toggle</key>
+    <value>apex_util.get_high_contrast_mode_toggle (
+  p_on_message  => [null],
+  p_off_message => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_LAST_NAME Function-->
+  <row>
+    <key>get_last_name</key>
+    <value>apex_util.get_last_name (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_NUMERIC_SESSION_STATE Function-->
+  <row>
+    <key>get_numeric_session_state</key>
+    <value>apex_util.get_numeric_session_state (
+  p_item => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_PREFERENCE Function-->
+  <row>
+    <key>get_preference</key>
+    <value>apex_util.get_preference (
+  p_preference => [null],
+  p_user       => [v('USER')]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_PRINT_DOCUMENT Function Signature 1-->
+  <row>
+    <key>get_print_document1</key>
+    <value>apex_util.get_print_document (
+  p_report_data        => '[]',
+  p_report_layout      => '[]',
+  p_report_layout_type => '[xsl-fo]',
+  p_document_format    => '[pdf]',
+  p_print_server       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_PRINT_DOCUMENT Function Signature 2-->
+  <row>
+    <key>get_print_document2</key>
+    <value>apex_util.get_print_document (
+  p_application_id     => [],
+  p_report_query_name  => '[]',
+  p_report_layout_name => [null],
+  p_report_layout_type => '[xsl-fo]',
+  p_document_format    => '[pdf]',
+  p_print_server       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_PRINT_DOCUMENT Function Signature 3-->
+  <row>
+    <key>get_print_document3</key>
+    <value>apex_util.get_print_document (
+  p_application_id     => [],
+  p_report_query_name  => '[]',
+  p_report_layout      => '[]',
+  p_report_layout_type => '[xsl-fo]',
+  p_document_format    => '[pdf]',
+  p_print_server       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_PRINT_DOCUMENT Function Signature 4-->
+  <row>
+    <key>get_print_document4</key>
+    <value>apex_util.get_print_document (
+  p_report_data        => '[]',
+  p_report_layout      => '[]',
+  p_report_layout_type => '[xsl-fo]',
+  p_document_format    => '[pdf]',
+  p_print_server       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SCREEN_READER_MODE_TOGGLE Function-->
+  <row>
+    <key>get_screen_reader_mode_toggle</key>
+    <value>apex_util.get_screen_reader_mode_toggle (
+  p_on_message  => [null],
+  p_off_message => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SESSION_LANG Function-->
+  <row>
+    <key>get_session_lang</key>
+    <value>apex_util.get_session_lang;</value>
+  </row>
+  <!--APEX_UTIL.GET_SESSION_STATE Function-->
+  <row>
+    <key>get_session_state</key>
+    <value>apex_util.get_session_state (
+  p_item => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SESSION_TERRITORY Function-->
+  <row>
+    <key>get_session_territory</key>
+    <value>apex_util.get_session_territory;</value>
+  </row>
+  <!--APEX_UTIL.GET_SESSION_TIME_ZONE Function-->
+  <row>
+    <key>get_session_time_zone</key>
+    <value>apex_util.get_session_time_zone;</value>
+  </row>
+  <!--APEX_UTIL.GET_SINCE Function Signature 1-->
+  <row>
+    <key>get_since1</key>
+    <value>apex_util.get_since (
+  p_date  => '[]',
+  p_short => [false]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SINCE Function Signature 2-->
+  <row>
+    <key>get_since2</key>
+    <value>apex_util.get_since (
+  p_date  => '[]',
+  p_short => '[N]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SUPPORTING_OBJECT_SCRIPT Function-->
+  <row>
+    <key>get_supporting_object_script1</key>
+    <value>apex_util.get_supporting_object_script (
+  p_application_id => [],
+  p_script_type    => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_SUPPORTING_OBJECT_SCRIPT Procedure-->
+  <row>
+    <key>get_supporting_object_script2</key>
+    <value>apex_util.get_supporting_object_script (
+  p_application_id => [],
+  p_script_type    => '[]',
+  p_output_type    => [apex_util.c_output_as_dbms_output]
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_USER_ID Function-->
+  <row>
+    <key>get_user_id</key>
+    <value>apex_util.get_user_id (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_USER_ROLES Function-->
+  <row>
+    <key>get_user_roles</key>
+    <value>apex_util.get_user_roles (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.GET_USERNAME Function-->
+  <row>
+    <key>get_username2</key>
+    <value>apex_util.get_username (
+  p_userid => []
+);</value>
+  </row>
+  <!--APEX_UTIL.HOST_URL Function-->
+  <row>
+    <key>host_url</key>
+    <value>apex_util.host_url (
+  p_option => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.HTML_PCT_GRAPH_MASK Function-->
+  <row>
+    <key>html_pct_graph_mask</key>
+    <value>apex_util.html_pct_graph_mask (
+  p_number         => [null],
+  p_size           => [100],
+  p_background     => [null],
+  p_bar_background => [null],
+  p_format         => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.INCREMENT_CALENDAR Procedure-->
+  <row>
+    <key>increment_calendar</key>
+    <value>apex_util.increment_calendar;</value>
+  </row>
+  <!--APEX_UTIL.IS_HIGH_CONTRAST_SESSION Function-->
+  <row>
+    <key>is_high_contrast_session</key>
+    <value>apex_util.is_high_contrast_session;</value>
+  </row>
+  <!--APEX_UTIL.IS_HIGH_CONTRAST_SESSION_YN Function-->
+  <row>
+    <key>is_high_contrast_session_yn</key>
+    <value>apex_util.is_high_contrast_session_yn;</value>
+  </row>
+  <!--APEX_UTIL.IS_LOGIN_PASSWORD_VALID Function-->
+  <row>
+    <key>is_login_password_valid</key>
+    <value>apex_util.is_login_password_valid (
+  p_username => '[]',
+  p_password => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.IS_SCREEN_READER_SESSION Function-->
+  <row>
+    <key>is_screen_reader_session</key>
+    <value>apex_util.is_screen_reader_session;</value>
+  </row>
+  <!--APEX_UTIL.IS_SCREEN_READER_SESSION_YN Function-->
+  <row>
+    <key>is_screen_reader_session_yn</key>
+    <value>apex_util.is_screen_reader_session_yn;</value>
+  </row>
+  <!--APEX_UTIL.IS_USERNAME_UNIQUE Function-->
+  <row>
+    <key>is_username_unique</key>
+    <value>apex_util.is_username_unique (
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.KEYVAL_NUM Function-->
+  <row>
+    <key>keyval_num</key>
+    <value>apex_util.keyval_num;</value>
+  </row>
+  <!--APEX_UTIL.KEYVAL_VC2 Function-->
+  <row>
+    <key>keyval_vc2</key>
+    <value>apex_util.keyval_vc2;</value>
+  </row>
+  <!--APEX_UTIL.LOCK_ACCOUNT Procedure-->
+  <row>
+    <key>lock_account</key>
+    <value>apex_util.lock_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.PASSWORD_FIRST_USE_OCCURRED Function-->
+  <row>
+    <key>password_first_use_occurred</key>
+    <value>apex_util.password_first_use_occurred (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.PREPARE_URL Function-->
+  <row>
+    <key>prepare_url</key>
+    <value>apex_util.prepare_url (
+  p_url                => '[]',
+  p_url_charset        => [null],
+  p_checksum_type      => [null],
+  p_triggering_element => '[this]',
+  p_plain_url          => [false],
+);</value>
+  </row>
+  <!--APEX_UTIL.PUBLIC_CHECK_AUTHORIZATION Function [DEPRECATED]-->
+  <row>
+    <key>public_check_authorization</key>
+    <value>apex_util.public_check_authorization (
+  p_security_scheme => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.PURGE_REGIONS_BY_APP Procedure-->
+  <row>
+    <key>purge_regions_by_app</key>
+    <value>apex_util.purge_regions_by_app (
+  p_application => []
+);</value>
+  </row>
+  <!--APEX_UTIL.PURGE_REGIONS_BY_NAME Procedure-->
+  <row>
+    <key>purge_regions_by_name</key>
+    <value>apex_util.purge_regions_by_name (
+  p_application => [],
+  p_page        => [],
+  p_region_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.PURGE_REGIONS_BY_PAGE Procedure-->
+  <row>
+    <key>purge_regions_by_page</key>
+    <value>apex_util.purge_regions_by_page (
+  p_application => [],
+  p_page        => []
+);</value>
+  </row>
+  <!--APEX_UTIL.REDIRECT_URL Procedure-->
+  <row>
+    <key>redirect_url</key>
+    <value>apex_util.redirect_url (
+  p_url              => '[]',
+  p_reset_htp_buffer => [true]
+);</value>
+  </row>
+  <!--APEX_UTIL.REMOVE_PREFERENCE Procedure-->
+  <row>
+    <key>remove_preference</key>
+    <value>apex_util.remove_preference (
+  p_preference => [null],
+  p_user       => [v('USER')]
+);</value>
+  </row>
+  <!--APEX_UTIL.REMOVE_SORT_PREFERENCES Procedure-->
+  <row>
+    <key>remove_sort_preferences</key>
+    <value>apex_util.remove_sort_preferences (
+  p_user => [v('USER')]
+);</value>
+  </row>
+  <!--APEX_UTIL.REMOVE_USER Procedure-->
+  <row>
+    <key>remove_user</key>
+    <value>apex_util.remove_user (
+  p_user_id   => [],
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.RESET_AUTHORIZATIONS Procedure [DEPRECATED]-->
+  <row>
+    <key>reset_authorizations</key>
+    <value>apex_util.reset_authorizations;</value>
+  </row>
+  <!--APEX_UTIL.RESET_PASSWORD Procedure-->
+  <row>
+    <key>reset_password</key>
+    <value>apex_util.reset_password (
+  p_user_name                    => [www_flow_security.g_user],
+  p_old_password                 => [null],
+  p_new_password                 => '[]',
+  p_change_password_on_first_use => [true]
+);</value>
+  </row>
+  <!--APEX_UTIL.RESET_PW Procedure-->
+  <row>
+    <key>reset_pw</key>
+    <value>apex_util.reset_pw (
+  p_user => '[]',
+  p_msg  => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SAVEKEY_NUM Function-->
+  <row>
+    <key>savekey_num</key>
+    <value>apex_util.savekey_num (
+  p_val => []
+);</value>
+  </row>
+  <!--APEX_UTIL.SAVEKEY_VC2 Function-->
+  <row>
+    <key>savekey_vc2</key>
+    <value>apex_util.savekey_vc2 (
+  p_val => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_APP_BUILD_STATUS Procedure-->
+  <row>
+    <key>set_app_build_status</key>
+    <value>apex_util.set_app_build_status (
+  p_application_id => [],
+  p_build_status   => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_APPLICATION_STATUS Procedure-->
+  <row>
+    <key>set_application_status</key>
+    <value>apex_util.set_application_status (
+  p_application_id       => [],
+  p_application_status   => '[]',
+  p_unavailable_value    => '[]',
+  p_restricted_user_list => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_ATTRIBUTE Procedure-->
+  <row>
+    <key>set_attribute</key>
+    <value>apex_util.set_attribute (
+  p_userid           => [],
+  p_attribute_number => [],
+  p_attribute_value  => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_AUTHENTICATION_RESULT Procedure-->
+  <row>
+    <key>set_authentication_result</key>
+    <value>apex_util.set_authentication_result (
+  p_code => []
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_BUILD_OPTION_STATUS Procedure-->
+  <row>
+    <key>set_build_option_status</key>
+    <value>apex_util.set_build_option_status (
+  p_application_id => [],
+  p_id             => [],
+  p_build_status   => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_CURRENT_THEME_STYLE Procedure [DEPRECATED]-->
+  <row>
+    <key>set_current_theme_style</key>
+    <value>apex_util.set_current_theme_style (
+  p_theme_number   => [],
+  p_theme_style_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_CUSTOM_AUTH_STATUS Procedure-->
+  <row>
+    <key>set_custom_auth_status</key>
+    <value>apex_util.set_custom_auth_status (
+  p_status => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_EDITION Procedure-->
+  <row>
+    <key>set_edition</key>
+    <value>apex_util.set_edition (
+  p_edition => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_EMAIL Procedure-->
+  <row>
+    <key>set_email</key>
+    <value>apex_util.set_email (
+  p_userid => [],
+  p_email  => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_FIRST_NAME Procedure-->
+  <row>
+    <key>set_first_name</key>
+    <value>apex_util.set_first_name (
+  p_userid     => [],
+  p_first_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_GLOBAL_NOTIFICATION Procedure-->
+  <row>
+    <key>set_global_notification</key>
+    <value>apex_util.set_global_notification (
+  p_application_id              => [],
+  p_global_notification_message => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_GROUP_GROUP_GRANTS Procedure-->
+  <row>
+    <key>set_group_group_grants</key>
+    <value>apex_util.set_group_group_grants (
+  p_group_name          => '[]',
+  p_granted_group_names => apex_t_varchar2('[]')
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_GROUP_USER_GRANTS Procedure-->
+  <row>
+    <key>set_group_user_grants</key>
+    <value>apex_util.set_group_user_grants (
+  p_user_name           => '[]',
+  p_granted_group_names => apex_t_varchar2('[]')
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_LAST_NAME Procedure-->
+  <row>
+    <key>set_last_name</key>
+    <value>apex_util.set_last_name (
+  p_userid    => [],
+  p_last_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_PARSING_SCHEMA_FOR_REQUEST Procedure-->
+  <row>
+    <key>set_parsing_schema_for_request</key>
+    <value>apex_util.set_parsing_schema_for_request (
+  p_schema => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_PREFERENCE Procedure-->
+  <row>
+    <key>set_preference</key>
+    <value>apex_util.set_preference (
+  p_preference => [null],
+  p_value      => [null],
+  p_user       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SECURITY_GROUP_ID Procedure-->
+  <row>
+    <key>set_security_group_id</key>
+    <value>apex_util.set_security_group_id (
+  p_security_group_id => []
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_HIGH_CONTRAST_OFF Procedure-->
+  <row>
+    <key>set_session_high_contrast_off</key>
+    <value>apex_util.set_session_high_contrast_off;</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_HIGH_CONTRAST_ON Procedure-->
+  <row>
+    <key>set_session_high_contrast_on</key>
+    <value>apex_util.set_session_high_contrast_on;</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_LANG Procedure-->
+  <row>
+    <key>set_session_lang</key>
+    <value>apex_util.set_session_lang (
+  p_lang => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_LIFETIME_SECONDS Procedure-->
+  <row>
+    <key>set_session_lifetime_seconds</key>
+    <value>apex_util.set_session_lifetime_seconds (
+  p_seconds => [],
+  p_scope   => '[SESSION]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_MAX_IDLE_SECONDS Procedure-->
+  <row>
+    <key>set_session_max_idle_seconds</key>
+    <value>apex_util.set_session_max_idle_seconds (
+  p_seconds => [],
+  p_scope   => '[SESSION]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_SCREEN_READER_OFF Procedure-->
+  <row>
+    <key>set_session_screen_reader_off</key>
+    <value>apex_util.set_session_screen_reader_off;</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_SCREEN_READER_ON Procedure-->
+  <row>
+    <key>set_session_screen_reader_on</key>
+    <value>apex_util.set_session_screen_reader_on;</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_STATE Procedure-->
+  <row>
+    <key>set_session_state</key>
+    <value>apex_util.set_session_state (
+  p_name   => [null],
+  p_value  => [null],
+  p_commit => [true]
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_TERRITORY Procedure-->
+  <row>
+    <key>set_session_territory</key>
+    <value>apex_util.set_session_territory (
+  p_territory => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_SESSION_TIME_ZONE Procedure-->
+  <row>
+    <key>set_session_time_zone</key>
+    <value>apex_util.set_session_time_zone (
+  p_time_zone => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_USERNAME Procedure-->
+  <row>
+    <key>set_username</key>
+    <value>apex_util.set_username (
+  p_userid   => [],
+  p_username => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SET_WORKSPACE Procedure-->
+  <row>
+    <key>set_workspace2</key>
+    <value>apex_util.set_workspace (
+  p_workspace => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SHOW_HIGH_CONTRAST_MODE_TOGGLE Procedure-->
+  <row>
+    <key>show_high_contrast_mode_toggle</key>
+    <value>apex_util.show_high_contrast_mode_toggle (
+  p_on_message  => [null],
+  p_off_message => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.SHOW_SCREEN_READER_MODE_TOGGLE Procedure-->
+  <row>
+    <key>show_screen_reader_mode_toggle</key>
+    <value>apex_util.show_screen_reader_mode_toggle (
+  p_on_message  => [null],
+  p_off_message => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.STRONG_PASSWORD_CHECK Procedure-->
+  <row>
+    <key>strong_password_check</key>
+    <value>apex_util.strong_password_check (
+  p_username                    => '[]',
+  p_password                    => '[]',
+  p_old_password                => '[]',
+  p_workspace_name              => '[]',
+  p_use_strong_rules            => [],
+  p_min_length_err              => [],
+  p_new_differs_by_err          => [],
+  p_one_alpha_err               => [],
+  p_one_numeric_err             => [],
+  p_one_punctuation_err         => [],
+  p_one_upper_err               => [],
+  p_one_lower_err               => [],
+  p_not_like_username_err       => [],
+  p_not_like_workspace_name_err => [],
+  p_not_like_words_err          => [],
+  p_not_reusable_err            => []
+);</value>
+  </row>
+  <!--APEX_UTIL.STRONG_PASSWORD_VALIDATION Function-->
+  <row>
+    <key>strong_password_validation</key>
+    <value>apex_util.strong_password_validation (
+  p_username       => '[]',
+  p_password       => '[]',
+  p_old_password   => [null],
+  p_workspace_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.SUBMIT_FEEDBACK Procedure-->
+  <row>
+    <key>submit_feedback</key>
+    <value>apex_util.submit_feedback (
+  p_comment        => [null],
+  p_type           => [1],
+  p_application_id => [null],
+  p_page_id        => [null],
+  p_email          => [null],
+  p_screen_width   => [null],
+  p_screen_height  => [null],
+  p_attribute_01   => [null],
+  p_attribute_02   => [null],
+  p_attribute_03   => [null],
+  p_attribute_04   => [null],
+  p_attribute_05   => [null],
+  p_attribute_06   => [null],
+  p_attribute_07   => [null],
+  p_attribute_08   => [null],
+  p_label_01       => [null],
+  p_label_02       => [null],
+  p_label_03       => [null],
+  p_label_04       => [null],
+  p_label_05       => [null],
+  p_label_06       => [null],
+  p_label_07       => [null],
+  p_label_08       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.SUBMIT_FEEDBACK_FOLLOWUP Procedure-->
+  <row>
+    <key>submit_feedback_followup</key>
+    <value>apex_util.submit_feedback_followup (
+  p_feedback_id => [],
+  p_follow_up   => [null],
+  p_email       => [null]
+);</value>
+  </row>
+  <!--APEX_UTIL.UNEXPIRE_END_USER_ACCOUNT Procedure-->
+  <row>
+    <key>unexpire_end_user_account</key>
+    <value>apex_util.unexpire_end_user_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.UNEXPIRE_WORKSPACE_ACCOUNT Procedure-->
+  <row>
+    <key>unexpire_workspace_account</key>
+    <value>apex_util.unexpire_workspace_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.UNLOCK_ACCOUNT Procedure-->
+  <row>
+    <key>unlock_account</key>
+    <value>apex_util.unlock_account (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.URL_ENCODE Function-->
+  <row>
+    <key>url_encode</key>
+    <value>apex_util.url_encode (
+  p_url => '[]'
+);</value>
+  </row>
+  <!--APEX_UTIL.WORKSPACE_ACCOUNT_DAYS_LEFT Function-->
+  <row>
+    <key>workspace_account_days_left</key>
+    <value>apex_util.workspace_account_days_left (
+  p_user_name => '[]'
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.BLOB2CLOBBASE64 Function-->
+  <row>
+    <key>blob2clobbase64</key>
+    <value>apex_web_service.blob2clobbase64 (
+  p_blob => '[]'
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.CLOBBASE642BLOB Function-->
+  <row>
+    <key>clobbase642blob</key>
+    <value>apex_web_service.clobbase642blob (
+  p_clob => '[]'
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.MAKE_REQUEST Procedure-->
+  <row>
+    <key>make_request1</key>
+    <value>apex_web_service.make_request (
+  p_url              => '[]',
+  p_action           => [null],
+  p_version          => '[1.1]',
+  p_collection_name  => [null],
+  p_envelope         => '[]',
+  p_username         => [null],
+  p_password         => [null],
+  p_scheme           => '[Basic]',
+  p_proxy_override   => [null],
+  p_transfer_timeout => [180],
+  p_wallet_path      => [null],
+  p_wallet_pwd       => [null],
+  p_https_host       => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.MAKE_REQUEST Function-->
+  <row>
+    <key>make_request2</key>
+    <value>apex_web_service.make_request (
+  p_url                  => '[]',
+  p_action               => [null],
+  p_version              => '[1.1]',
+  p_envelope             => '[]',
+  p_username             => [null],
+  p_password             => [null],
+  p_scheme               => '[Basic]',
+  p_proxy_override       => [null],
+  p_transfer_timeout     => [180],
+  p_wallet_path          => [null],
+  p_wallet_pwd           => [null],
+  p_https_host           => [null],
+  p_credential_static_id => [null],
+  p_token_url            => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.MAKE_REST_REQUEST Function-->
+  <row>
+    <key>make_rest_request</key>
+    <value>apex_web_service.make_rest_request (
+  p_url                  => '[]',
+  p_http_method          => '[]',
+  p_username             => [null],
+  p_password             => [null],
+  p_scheme               => '[Basic]',
+  p_proxy_override       => [null],
+  p_transfer_timeout     => [180],
+  p_body                 => [empty_clob()],
+  p_body_blob            => [empty_clob()],
+  p_parm_name            => [empty_vc_arr],
+  p_parm_value           => [empty_vc_arr],
+  p_wallet_path          => [null],
+  p_wallet_pwd           => [null],
+  p_https_host           => [null],
+  p_credential_static_id => [null],
+  p_token_url            => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.MAKE_REST_REQUEST_B Function-->
+  <row>
+    <key>make_rest_request_b</key>
+    <value>apex_web_service.make_rest_request_b (
+  p_url                  => '[]',
+  p_http_method          => '[]',
+  p_username             => [null],
+  p_password             => [null],
+  p_scheme               => '[Basic]',
+  p_proxy_override       => [null],
+  p_transfer_timeout     => [180],
+  p_body                 => [empty_clob()],
+  p_body_blob            => [empty_clob()],
+  p_parm_name            => [empty_vc_arr],
+  p_parm_value           => [empty_vc_arr],
+  p_wallet_path          => [null],
+  p_wallet_pwd           => [null],
+  p_https_host           => [null],
+  p_credential_static_id => [null],
+  p_token_url            => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.OAUTH_AUTHENTICATE Function-->
+  <row>
+    <key>oauth_authenticate</key>
+    <value>apex_web_service.oauth_authenticate (
+  p_token_url        => '[]',
+  p_client_id        => '[]',
+  p_client_secret    => '[]',
+  p_flow_type        => '[OAUTH_CLIENT_CRED]',
+  p_proxy_override   => [null],
+  p_transfer_timeout => [180],
+  p_wallet_path      => [null],
+  p_wallet_pwd       => [null],
+  p_https_host       => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.OAUTH_GET_LAST_TOKEN Function-->
+  <row>
+    <key>oauth_get_last_token</key>
+    <value>apex_web_service.oauth_get_last_token;</value>
+  </row>
+  <!--APEX_WEB_SERVICE.OAUTH_SET_TOKEN Function-->
+  <row>
+    <key>oauth_set_token</key>
+    <value>apex_web_service.oauth_set_token (
+  p_token   => '[]',
+  p_expires => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.PARSE_RESPONSE Function-->
+  <row>
+    <key>parse_response</key>
+    <value>apex_web_service.parse_response (
+  p_collection_name => '[]',
+  p_xpath           => '[]',
+  p_ns              => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.PARSE_RESPONSE_CLOB Function-->
+  <row>
+    <key>parse_response_clob</key>
+    <value>apex_web_service.parse_response_clob (
+  p_collection_name => '[]',
+  p_xpath           => '[]',
+  p_ns              => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.PARSE_XML Function-->
+  <row>
+    <key>parse_xml</key>
+    <value>apex_web_service.parse_xml (
+  p_xml   => '[]',
+  p_xpath => '[]',
+  p_ns    => [null]
+);</value>
+  </row>
+  <!--APEX_WEB_SERVICE.PARSE_XML_CLOB Function-->
+  <row>
+    <key>parse_xml_clob</key>
+    <value>apex_web_service.parse_xml_clob (
+  p_xml   => '[]',
+  p_xpath => '[]',
+  p_ns    => [null]
+);</value>
+  </row>
+  <!--APEX_ZIP.ADD_FILE Procedure-->
+  <row>
+    <key>add_file2</key>
+    <value>apex_zip.add_file (
+  p_zipped_blob => '[]',
+  p_file_name   => '[]',
+  p_content     => '[]'
+);</value>
+  </row>
+  <!--APEX_ZIP.FINISH Procedure-->
+  <row>
+    <key>finish</key>
+    <value>apex_zip.finish (
+  p_zipped_blob => '[]'
+);</value>
+  </row>
+  <!--APEX_ZIP.GET_FILE_CONTENT Function-->
+  <row>
+    <key>get_file_content</key>
+    <value>apex_zip.get_file_content (
+  p_zipped_blob => '[]',
+  p_file_name   => '[]',
+  p_encoding    => [null]
+);</value>
+  </row>
+  <!--APEX_ZIP.GET_FILES Function -->
+  <row>
+    <key>get_files</key>
+    <value>apex_zip.get_files (
+  p_zipped_blob => '[]',
+  p_only_files  => [true],
+  p_encoding    => [null]
+);</value>
+  </row>
+</rows>
