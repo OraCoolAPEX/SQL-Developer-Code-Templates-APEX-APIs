@@ -8,15 +8,15 @@ If you use Oracle Application Express (APEX) APIs reference on SQL Developer, yo
 
 ## Remarks
 
-1. Use `Ctrl + Space` to manually active the Completion Insight or check the automatic popup speed on **Tools >> Preferences >> Code Editor >> Completion Insight**
-2. While navigating through the parameters, use `Tab` to move to the next parameter or `Shift + Tab` to move to the previous parameter.
-3. Some of the parameters are pre-populated with their default values and some of the parameters display in /\*comments\*/ their available pre-defined values.
+1. Use `Ctrl + Space` to manually activate the Completion Insight or check the automatic popup speed on **Tools >> Preferences >> Code Editor >> Completion Insight**
+2. While navigating through the parameters, use `Tab` to move to the next one or `Shift + Tab` to move to the previous one.
+3. Some of the parameters are pre-populated with their default values and some of the parameters display their available pre-defined values in /\*comments\*/.
 
 ## Instructions
-1. Download the **CodeTemplate.xml** that matches to your current Oracle APEX version (only 18.2 is available right now).
+1. Download the **CodeTemplate.xml** that matches your current version of Oracle APEX (right now, only 18.2 is available).
 2. On Windows, navigate to C:\Users\\\<*USER*>\AppData\Roaming\SQL Developer:
     * If you *do not* have any previous Code Template defined, simply replace the existing **CodeTemplate.xml** file.
-    * If you *do* have Code Templates defined, copy everything between the <rows></rows> tags on this **CodeTemplate.xml** file and paste it at the end of your existing file, right before the closing </rows> tag.
+    * If you *do* have Code Templates defined, copy everything between the \<rows>\</rows> tags on this **CodeTemplate.xml** file and paste it at the end of your existing file, right before the closing \</rows> tag.
 3. Restart SQL Developer.
 
 ## Troubleshooting
