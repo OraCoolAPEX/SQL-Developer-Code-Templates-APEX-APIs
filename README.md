@@ -6,13 +6,14 @@ If you use Oracle Application Express (APEX) APIs reference on SQL Developer, yo
 
 ![Preview](/preview.gif?raw=true "Preview")
 
-## Remarks
+## To Use It
 
 1. Use `Ctrl + Space` to manually activate the Completion Insight or check the automatic popup speed on **Tools >> Preferences >> Code Editor >> Completion Insight**
-2. While navigating through the parameters, use `Tab` to move to the next one or `Shift + Tab` to move to the previous one.
-3. Some of the parameters are pre-populated with their default values and some of the parameters display their available pre-defined values in /\*comments\*/.
+2. To navigate through the parameters, use `Tab` to move forward or `Shift + Tab` to move backwards.
+3. Some parameters are pre-populated with their default values (if any) and others display their pre-defined possible values in /\*comments\*/.
 
-## Instructions
+## To Configure It
+
 1. Download the **CodeTemplate.xml** that matches your current version of Oracle APEX (right now, only 18.2 is available).
 2. On Windows, navigate to C:\Users\\\<*USER*>\AppData\Roaming\SQL Developer:
     * If you *do not* have any previous Code Template defined, simply replace the existing **CodeTemplate.xml** file.
