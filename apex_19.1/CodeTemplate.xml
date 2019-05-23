@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rows>
-  <!--https://docs.oracle.com/en/database/oracle/application-express/18.2/aeapi/toc.htm-->
+  <!--https://docs.oracle.com/en/database/oracle/application-express/19.1/aeapi/index.html-->
   <!--APEX_APPLICATION.HELP Procedure-->
   <row>
     <key>help</key>
@@ -267,9 +267,9 @@
   p_workspace => '[]'
 );</value>
   </row>
-  <!--APEX_AUTHENTICATION.CALLBACK Procedure-->
+  <!--APEX_AUTHENTICATION.CALLBACK Procedure Signature 1-->
   <row>
-    <key>callback</key>
+    <key>callback1</key>
     <value>apex_authentication.callback (
   p_session_id      => [],
   p_app_id          => [],
@@ -285,6 +285,62 @@
   p_x08             => [null],
   p_x09             => [null],
   p_x10             => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.CALLBACK Procedure Signature 2-->
+  <row>
+    <key>callback2</key>
+    <value>apex_authentication.callback (
+  state             => '[]',
+  code              => [null],
+  error             => [null],
+  error_description => [null],
+  error_uri         => [null],
+  error_reason      => [null],
+  error_code        => [null],
+  error_message     => [null],
+  authuser          => [null],
+  session_state     => [null],
+  prompt            => [null],
+  scope             => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.CALLBACK2 Procedure Signature 1-->
+  <row>
+    <key>callback21</key>
+    <value>apex_authentication.callback2 (
+  p_session_id      => [],
+  p_app_id          => [],
+  p_ajax_identifier => '[]',
+  p_page_id         => [null],
+  p_x01             => [null],
+  p_x02             => [null],
+  p_x03             => [null],
+  p_x04             => [null],
+  p_x05             => [null],
+  p_x06             => [null],
+  p_x07             => [null],
+  p_x08             => [null],
+  p_x09             => [null],
+  p_x10             => [null]
+);</value>
+  </row>
+  <!--APEX_AUTHENTICATION.CALLBACK2 Procedure Signature 2-->
+  <row>
+    <key>callback22</key>
+    <value>apex_authentication.callback2 (
+  state             => '[]',
+  code              => [null],
+  error             => [null],
+  error_description => [null],
+  error_uri         => [null],
+  error_reason      => [null],
+  error_code        => [null],
+  error_message     => [null],
+  authuser          => [null],
+  session_state     => [null],
+  prompt            => [null],
+  scope             => [null]
 );</value>
   </row>
   <!--APEX_AUTHENTICATION.GET_CALLBACK_URL Function-->
@@ -947,6 +1003,78 @@
   p_user => '[]'
 );</value>
   </row>
+  <!--APEX_DATA_PARSER.DISCOVER Function-->
+  <row>
+    <key>discover</key>
+    <value>apex_data_parser.discover (
+  p_content           => '[]',
+  p_file_name         => '[]',
+  p_decimal_char      => [null],
+  p_xlsx_sheet_name   => [null],
+  p_row_selector      => [null],
+  p_csv_row_delimiter => '[LF]',
+  p_csv_col_delimiter => [null],
+  p_csv_enclosed      => '["]',
+  p_file_charset      => '[AL32UTF8]',
+  p_max_rows          => [200]
+);</value>
+  </row>
+  <!--APEX_DATA_PARSER.GET_COLUMNS Function-->
+  <row>
+    <key>get_columns</key>
+    <value>apex_data_parser.get_columns (
+  p_profile => '[]'
+);</value>
+  </row>
+  <!--APEX_DATA_PARSER.GET_FILE_PROFILE Function-->
+  <row>
+    <key>get_file_profile</key>
+    <value>apex_data_parser.get_file_profile;</value>
+  </row>
+  <!--APEX_DATA_PARSER.GET_FILE_TYPE Function-->
+  <row>
+    <key>get_file_type</key>
+    <value>apex_data_parser.get_file_type (
+  p_file_name => '[]'
+);</value>
+  </row>
+  <!--APEX_DATA_PARSER.GET_XLSX_WORKSHEETS Function-->
+  <row>
+    <key>get_xlsx_worksheets</key>
+    <value>apex_data_parser.get_xlsx_worksheets (
+  p_content => '[]'
+);</value>
+  </row>
+  <!--APEX_DATA_PARSER.JSON_TO_PROFILE Function-->
+  <row>
+    <key>json_to_profile</key>
+    <value>apex_data_parser.json_to_profile (
+  p_json => '[]'
+);</value>
+  </row>
+  <!--APEX_DATA_PARSER.PARSE Function-->
+  <row>
+    <key>parse</key>
+    <value>apex_data_parser.parse (
+  p_content                     => '[]',
+  p_file_name                   => [null],
+  p_file_type                   => apex_data_parser.c_file_type_[], /*c_file_type_xlsx, c_file_type_csv, c_file_type_xml, c_file_type_json*/
+  p_file_profile                => [null],
+  p_detect_data_types           => '[Y]',
+  p_decimal_char                => [null],
+  p_xlsx_sheet_name             => [null],
+  p_row_selector                => [null],
+  p_csv_row_delimiter           => '[LF]',
+  p_csv_col_delimiter           => [null],
+  p_csv_enclosed                => '["]',
+  p_skip_rows                   => [0],
+  p_add_headers_row             => '[N]',
+  p_file_charset                => '[AL32UTF8]',
+  p_max_rows                    => [null],
+  p_return_rows                 => [null],
+  p_store_profile_to_collection => [null]
+);</value>
+  </row>
   <!--APEX_DEBUG.DISABLE Procedure-->
   <row>
     <key>disable</key>
@@ -1029,15 +1157,6 @@
   <row>
     <key>log_long_message</key>
     <value>apex_debug.log_long_message (
-  p_message => [null],
-  p_enabled => [false],
-  p_level   => [apex_debug.c_log_level_app_trace]
-);</value>
-  </row>
-  <!--APEX_DEBUG.LOG_MESSAGE Procedure [DEPRECATED]-->
-  <row>
-    <key>log_message</key>
-    <value>apex_debug.log_message (
   p_message => [null],
   p_enabled => [false],
   p_level   => [apex_debug.c_log_level_app_trace]
@@ -1360,6 +1479,14 @@
   p_sql_expression => [null]
 );</value>
   </row>
+  <!--APEX_EXEC.ADD_DML_ROW Procedure-->
+  <row>
+    <key>add_dml_row</key>
+    <value>apex_exec.add_dml_row (
+  p_context   => '[]',
+  p_operation => apex_exec.c_dml_operation_[] /*c_dml_operation_insert, c_dml_operation_update, c_dml_operation_delete*/
+);</value>
+  </row>
   <!--APEX_EXEC.ADD_FILTER Procedure Signature 1-->
   <row>
     <key>add_filter1</key>
@@ -1499,11 +1626,35 @@
   p_value      => []
 );</value>
   </row>
+  <!--APEX_EXEC.CLEAR_DML_ROWS Procedure-->
+  <row>
+    <key>clear_dml_rows</key>
+    <value>apex_exec.clear_dml_rows (
+  p_context => '[]'
+);</value>
+  </row>
   <!--APEX_EXEC.CLOSE Procedure-->
   <row>
     <key>close</key>
     <value>apex_exec.close (
   p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.COPY_DATA Procedure-->
+  <row>
+    <key>copy_data</key>
+    <value>apex_exec.copy_data (
+  p_from_context          => '[]',
+  p_to_context            => '[]',
+  p_operation_column_name => [null] /*I, U, D*/
+);</value>
+  </row>
+  <!--APEX_EXEC.EXECUTE_DML Procedure-->
+  <row>
+    <key>execute_dml</key>
+    <value>apex_exec.execute_dml (
+  p_context             => '[]',
+  p_p_continue_on_error => [false]
 );</value>
   </row>
   <!--APEX_EXEC.EXECUTE_PLSQL Procedure-->
@@ -1535,76 +1686,180 @@
   p_parameters       => '[]'
 );</value>
   </row>
-  <!--APEX_EXEC.GET_VARCHAR2 Functions-->
+  <!--APEX_EXEC.GET_VARCHAR2 Function Signature 1-->
   <row>
-    <key>get_varchar21</key>
+    <key>get_varchar2_column_idx</key>
     <value>apex_exec.get_varchar2 (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_NUMBER Functions-->
+  <!--APEX_EXEC.GET_VARCHAR2 Function Signature 2-->
   <row>
-    <key>get_number1</key>
+    <key>get_varchar2_column_name</key>
+    <value>apex_exec.get_varchar2 (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_NUMBER Function Signature 1-->
+  <row>
+    <key>get_number_column_idx</key>
     <value>apex_exec.get_number (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_DATE Functions-->
+  <!--APEX_EXEC.GET_NUMBER Function Signature 2-->
   <row>
-    <key>get_date1</key>
+    <key>get_number_column_name</key>
+    <value>apex_exec.get_number (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_DATE Function Signature 1-->
+  <row>
+    <key>get_date_column_idx</key>
     <value>apex_exec.get_date (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_TIMESTAMP Functions-->
+  <!--APEX_EXEC.GET_DATE Function Signature 2-->
   <row>
-    <key>get_timestamp</key>
+    <key>get_date_column_name</key>
+    <value>apex_exec.get_date (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP Function Signature 1-->
+  <row>
+    <key>get_timestamp_column_idx</key>
     <value>apex_exec.get_timestamp (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_TIMESTAMP_TZ Functions-->
+  <!--APEX_EXEC.GET_TIMESTAMP Function Signature 2-->
   <row>
-    <key>get_timestamp_tz</key>
+    <key>get_timestamp_column_name</key>
+    <value>apex_exec.get_timestamp (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP_TZ Function Signature 1-->
+  <row>
+    <key>get_timestamp_tz_column_idx</key>
     <value>apex_exec.get_timestamp_tz (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_TIMESTAMP_LTZ Functions-->
+  <!--APEX_EXEC.GET_TIMESTAMP_TZ Function Signature 2-->
   <row>
-    <key>get_timestamp_ltz</key>
+    <key>get_timestamp_tz_column_name</key>
+    <value>apex_exec.get_timestamp_tz (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_TIMESTAMP_LTZ Function Signature 1-->
+  <row>
+    <key>get_timestamp_ltz_column_idx</key>
     <value>apex_exec.get_timestamp_ltz (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_CLOB Functions-->
+  <!--APEX_EXEC.GET_TIMESTAMP_LTZ Function Signature 2-->
   <row>
-    <key>get_clob1</key>
+    <key>get_timestamp_ltz_column_name</key>
+    <value>apex_exec.get_timestamp_ltz (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_CLOB Function Signature 1-->
+  <row>
+    <key>get_clob_column_idx</key>
     <value>apex_exec.get_clob (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_INTERVALD2S Functions-->
+  <!--APEX_EXEC.GET_CLOB Function Signature 2-->
   <row>
-    <key>get_intervald2s</key>
+    <key>get_clob_column_name</key>
+    <value>apex_exec.get_clob (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_BLOB Function Signature 1-->
+  <row>
+    <key>get_blob_column_idx</key>
+    <value>apex_exec.get_blob (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_BLOB Function Signature 2-->
+  <row>
+    <key>get_blob_column_name</key>
+    <value>apex_exec.get_blob (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_INTERVALD2S Function Signature 1-->
+  <row>
+    <key>get_intervald2s_column_idx</key>
     <value>apex_exec.get_intervald2s (
   p_context    => '[]',
   p_column_idx => []
 );</value>
   </row>
-  <!--APEX_EXEC.GET_INTERVALY2M Functions-->
+  <!--APEX_EXEC.GET_INTERVALD2S Function Signature 2-->
   <row>
-    <key>get_intervaly2m</key>
+    <key>get_intervald2s_column_name</key>
+    <value>apex_exec.get_intervald2s (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_INTERVALY2M Function Signature 1-->
+  <row>
+    <key>get_intervaly2m_column_idx</key>
     <value>apex_exec.get_intervaly2m (
   p_context    => '[]',
   p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_INTERVALY2M Function Signature 2-->
+  <row>
+    <key>get_intervaly2m_column_name</key>
+    <value>apex_exec.get_intervaly2m (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_ANYDATA Function Signature 1-->
+  <row>
+    <key>get_anydata_column_idx</key>
+    <value>apex_exec.get_anydata (
+  p_context    => '[]',
+  p_column_idx => []
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_ANYDATA Function Signature 2-->
+  <row>
+    <key>get_anydata_column_name</key>
+    <value>apex_exec.get_anydata (
+  p_context     => '[]',
+  p_column_name => '[]'
 );</value>
   </row>
   <!--APEX_EXEC.GET_COLUMN Function-->
@@ -1631,6 +1886,27 @@
   p_attribute_label => [null],
   p_is_required     => [false],
   p_data_type       => [apex_exec.c_data_type_varchar2]
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_DATA_TYPE Functions-->
+  <row>
+    <key>get_data_type</key>
+    <value>apex_exec.get_data_type (
+  p_datatype_num => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_DML_STATUS_CODE Function-->
+  <row>
+    <key>get_dml_status_code</key>
+    <value>apex_exec.get_dml_status_code (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.GET_DML_STATUS_MESSAGE Function-->
+  <row>
+    <key>get_dml_status_message</key>
+    <value>apex_exec.get_dml_status_message (
+  p_context => '[]'
 );</value>
   </row>
   <!--APEX_EXEC.GET_PARAMETER_VARCHAR2 Functions-->
@@ -1705,10 +1981,24 @@
   p_name       => '[]'
 );</value>
   </row>
+  <!--APEX_EXEC.GET_ROW_VERSION_CHECKSUM Function-->
+  <row>
+    <key>get_row_version_checksum</key>
+    <value>apex_exec.get_total_row_count (
+  p_context => '[]'
+);</value>
+  </row>
   <!--APEX_EXEC.GET_TOTAL_ROW_COUNT Function-->
   <row>
     <key>get_total_row_count</key>
     <value>apex_exec.get_total_row_count (
+  p_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.HAS_ERROR Function-->
+  <row>
+    <key>has_error</key>
+    <value>apex_exec.has_error (
   p_context => '[]'
 );</value>
   </row>
@@ -1726,6 +2016,51 @@
   p_context => '[]'
 );</value>
   </row>
+  <!--APEX_EXEC.OPEN_LOCAL_DML_CONTEXT Function-->
+  <row>
+    <key>open_local_dml_context</key>
+    <value>apex_exec.open_local_dml_context (
+  p_columns               => [apex_exec.c_empty_columns],
+  p_query_type            => '[]',
+  p_table_owner           => [null],
+  p_table_name            => [null],
+  p_where_clause          => [null],
+  p_sql_query             => [null],
+  p_plsql_function_body   => [null],
+  p_with_check_option     => [true],
+  p_optimizer_hint        => [null],
+  p_dml_table_owner       => [null],
+  p_dml_table_name        => [null],
+  p_dml_plsql_code        => [null],
+  p_lost_update_detection => [null],
+  p_lock_rows             => [null],
+  p_lock_plsql_code       => [null],
+  p_sql_parameters        => [apex_exec.c_empty_parameters]
+);</value>
+  </row>
+  <!--APEX_EXEC.OPEN_REMOTE_DML_CONTEXT Function-->
+  <row>
+    <key>open_remote_dml_context</key>
+    <value>apex_exec.open_remote_dml_context (
+  p_server_static_id      => '[]',
+  p_columns               => [apex_exec.c_empty_columns],
+  p_query_type            => '[]',
+  p_table_owner           => [null],
+  p_table_name            => [null],
+  p_where_clause          => [null],
+  p_sql_query             => [null],
+  p_plsql_function_body   => [null],
+  p_with_check_option     => [true],
+  p_optimizer_hint        => [null],
+  p_dml_table_owner       => [null],
+  p_dml_table_name        => [null],
+  p_dml_plsql_code        => [null],
+  p_lost_update_detection => [null],
+  p_lock_rows             => [null],
+  p_lock_plsql_code       => [null],
+  p_sql_parameters        => [apex_exec.c_empty_parameters]
+);</value>
+  </row>
   <!--APEX_EXEC.OPEN_REMOTE_SQL_QUERY Function-->
   <row>
     <key>open_remote_sql_query</key>
@@ -1740,9 +2075,23 @@
   p_total_row_count_limit => [null]
 );</value>
   </row>
+  <!--APEX_EXEC.OPEN_QUERY_CONTEXT Procedure-->
+  <row>
+    <key>open_query_context1</key>
+    <value>apex_exec.open_query_context (
+  p_columns               => [apex_exec.c_empty_columns],
+  p_filters               => [apex_exec.c_empty_filters],
+  p_order_bys             => [apex_exec.c_empty_order_bys],
+  p_first_row             => [null],
+  p_max_rows              => [null],
+  p_total_row_count       => [false],
+  p_total_row_count_limit => [null],
+  p_sql_parameters        => [apex_exec.c_empty_parameters]
+);</value>
+  </row>
   <!--APEX_EXEC.OPEN_QUERY_CONTEXT Function-->
   <row>
-    <key>open_query_context</key>
+    <key>open_query_context2</key>
     <value>apex_exec.open_query_context (
   p_location               => apex_exec.c_location_[], /*c_location_local_db, c_location_remote_db, c_location_web_source*/
   p_table_owner            => [null],
@@ -1769,6 +2118,16 @@
   p_total_row_count_limit  => [null]
 );</value>
   </row>
+  <!--APEX_EXEC.OPEN_WEB__SOURCE_DML_CONTEXT Function-->
+  <row>
+    <key>open_web_source_dml_context</key>
+    <value>apex_exec.open_web_source_dml_context (
+  p_module_static_id      => '[]'
+  p_parameters            => [apex_exec.c_empty_parameters],
+  p_columns               => [apex_exec.c_empty_columns],
+  p_lost_update_detection => [null]
+);</value>
+  </row>
   <!--APEX_EXEC.OPEN_WEB_SOURCE_QUERY Function-->
   <row>
     <key>open_web_source_query</key>
@@ -1791,6 +2150,92 @@
     <value>apex_exec.purge_web_source_cache (
   p_module_static_id     => '[]',
   p_current_session_only => [false]
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_NULL Procedure Signature 1-->
+  <row>
+    <key>set_null_column_position</key>
+    <value>apex_exec.set_null (
+  p_context         => '[]',
+  p_column_position => []
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_NULL Procedure Signature 2-->
+  <row>
+    <key>set_null_column_name</key>
+    <value>apex_exec.set_null (
+  p_context     => '[]',
+  p_column_name => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (VARCHAR2)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (DATE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (TIMESTAMP)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (TIMESTAMP WITH TIME ZONE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (TIMESTAMP WITH LOCAL TIME ZONE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (DSINTERVAL_UNCONSTRAINED)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (YMINTERVAL_UNCONSTRAINED)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (CLOB)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (BLOB)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (SYS.ANYDATA)-->
+  <row>
+    <key>set_value_column_position1</key>
+    <value>apex_exec.set_value (
+  p_context         => '[]',
+  p_column_position => [],
+  p_value           => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (VARCHAR2)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (DATE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (TIMESTAMP)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (TIMESTAMP WITH TIME ZONE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (TIMESTAMP WITH LOCAL TIME ZONE)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (DSINTERVAL_UNCONSTRAINED)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (YMINTERVAL_UNCONSTRAINED)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (CLOB)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (BLOB)-->
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (SYS.ANYDATA)-->
+  <row>
+    <key>set_value_column_name1</key>
+    <value>apex_exec.set_value (
+  p_context     => '[]',
+  p_column_name => '[]',
+  p_value       => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 1 (NUMBER)-->
+  <row>
+    <key>set_value_column_position2</key>
+    <value>apex_exec.set_value (
+  p_context         => '[]',
+  p_column_position => [],
+  p_value           => []
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_VALUE Procedure Signature 2 (NUMBER)-->
+  <row>
+    <key>set_value_column_name2</key>
+    <value>apex_exec.set_value (
+  p_context     => '[]',
+  p_column_name => '[]',
+  p_value       => []
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_VALUES Procedure-->
+  <row>
+    <key>set_values</key>
+    <value>apex_exec.set_values (
+  p_context        => '[]',
+  p_source_context => '[]'
+);</value>
+  </row>
+  <!--APEX_EXEC.SET_ROW_VERSION_CHECKSUM Procedure-->
+  <row>
+    <key>set_row_version_checksum</key>
+    <value>apex_exec.set_values (
+  p_context  => '[]',
+  p_checksum => '[]'
 );</value>
   </row>
   <!--APEX_EXPORT.GET_APPLICATION Function-->
@@ -1868,6 +2313,11 @@
   p_workspace => '[]'
 );</value>
   </row>
+  <!--APEX_INSTANCE_ADMIN.DB_SIGNATURE Function-->
+  <row>
+    <key>db_signature</key>
+    <value>apex_instance_admin.db_signature;</value>
+  </row>
   <!--APEX_INSTANCE_ADMIN.FREE_WORKSPACE_APP_IDS Procedure-->
   <row>
     <key>free_workspace_app_ids</key>
@@ -1896,6 +2346,11 @@
   p_workspace => '[]',
   p_parameter => '[]'
 );</value>
+  </row>
+  <!--APEX_INSTANCE_ADMIN.IS_DB_SIGNATURE_VALID Function-->
+  <row>
+    <key>is_db_signature_valid</key>
+    <value>apex_instance_admin.is_db_signature_valid;</value>
   </row>
   <!--APEX_INSTANCE_ADMIN.REMOVE_APPLICATION Procedure-->
   <row>
@@ -2632,7 +3087,7 @@
   </row>
   <!--APEX_JSON.GET_DATE Function-->
   <row>
-    <key>get_date2</key>
+    <key>get_date</key>
     <value>apex_json.get_date (
   p_path    => '[]',
   p0        => [null],
@@ -3249,16 +3704,6 @@
     <key>is_desktop_ui</key>
     <value>apex_page.is_desktop_ui;</value>
   </row>
-  <!--APEX_PAGE.IS_JQM_SMARTPHONE_UI Function-->
-  <row>
-    <key>is_jqm_smartphone_ui</key>
-    <value>apex_page.is_jqm_smartphone_ui;</value>
-  </row>
-  <!--APEX_PAGE.IS_JQM_TABLET_UI Function-->
-  <row>
-    <key>is_jqm_tablet_ui</key>
-    <value>apex_page.is_jqm_tablet_ui;</value>
-  </row>
   <!--APEX_PAGE.GET_UI_TYPE Function-->
   <row>
     <key>get_ui_type</key>
@@ -3775,6 +4220,15 @@
   p_cnt => [2]
 );</value>
   </row>
+  <!--APEX_STRING.GET_SEARCHABLE_PHRASES Function-->
+  <row>
+    <key>get_searchable_phrases</key>
+    <value>apex_string.get_searchable_phrases (
+  p_strings   => '[]',
+  p_max_words => [3]
+  p_language  => '[en]' /*cn, de, en, es, fr, it, ja, ko, pt-br*/
+);</value>
+  </row>
   <!--APEX_STRING.GREP Function Signature 1-->
   <row>
     <key>grep1</key>
@@ -3851,14 +4305,22 @@
   p_value => '[]'
 );</value>
   </row>
-  <!--APEX_STRING.PUSH Procedure Signature 1-->
-  <!--APEX_STRING.PUSH Procedure Signature 2-->
-  <!--APEX_STRING.PUSH Procedure Signature 3-->
+  <!--APEX_STRING.PUSH Procedure Signature 1 (VARCHAR2)-->
+  <!--APEX_STRING.PUSH Procedure Signature 2 (NUMBER)-->
   <row>
-    <key>push</key>
+    <key>push_value</key>
     <value>apex_string.push (
   p_table => apex_t_varchar2('[]'),
   p_value => []
+);</value>
+  </row>
+  <!--APEX_STRING.PUSH Procedure Signature 3 (APEX_T_VARCHAR2)-->
+  <!--APEX_STRING.PUSH Procedure Signature 4 (WWV_FLOW_GLOBAL.VC_ARR2)-->
+  <row>
+    <key>push_values</key>
+    <value>apex_string.push (
+  p_table  => apex_t_varchar2('[]'),
+  p_values => []
 );</value>
   </row>
   <!--APEX_STRING.SHUFFLE Function-->
@@ -3892,6 +4354,22 @@
     <value>apex_string.split_numbers (
   p_str => '[]',
   p_sep => [apex_application.LF]
+);</value>
+  </row>
+  <!--APEX_STRING.STRING_TO_TABLE Function-->
+  <row>
+    <key>string_to_table</key>
+    <value>apex_string.string_to_table (
+  p_str => '[]',
+  p_sep => '[:]'
+);</value>
+  </row>
+  <!--APEX_STRING.TABLE_TO_STRING Function-->
+  <row>
+    <key>table_to_string</key>
+    <value>apex_string.table_to_string (
+  p_table => '[]',
+  p_sep   => '[:]'
 );</value>
   </row>
   <!--APEX_THEME.CLEAR_ALL_USERS_STYLE Procedure-->
@@ -4969,13 +5447,6 @@
   p_plain_url          => [false],
 );</value>
   </row>
-  <!--APEX_UTIL.PUBLIC_CHECK_AUTHORIZATION Function [DEPRECATED]-->
-  <row>
-    <key>public_check_authorization</key>
-    <value>apex_util.public_check_authorization (
-  p_security_scheme => '[]'
-);</value>
-  </row>
   <!--APEX_UTIL.PURGE_REGIONS_BY_APP Procedure-->
   <row>
     <key>purge_regions_by_app</key>
@@ -5030,11 +5501,6 @@
   p_user_id   => [],
   p_user_name => '[]'
 );</value>
-  </row>
-  <!--APEX_UTIL.RESET_AUTHORIZATIONS Procedure [DEPRECATED]-->
-  <row>
-    <key>reset_authorizations</key>
-    <value>apex_util.reset_authorizations;</value>
   </row>
   <!--APEX_UTIL.RESET_PASSWORD Procedure-->
   <row>
@@ -5109,14 +5575,6 @@
   p_application_id => [],
   p_id             => [],
   p_build_status   => '[]'
-);</value>
-  </row>
-  <!--APEX_UTIL.SET_CURRENT_THEME_STYLE Procedure [DEPRECATED]-->
-  <row>
-    <key>set_current_theme_style</key>
-    <value>apex_util.set_current_theme_style (
-  p_theme_number   => [],
-  p_theme_style_id => []
 );</value>
   </row>
   <!--APEX_UTIL.SET_CUSTOM_AUTH_STATUS Procedure-->

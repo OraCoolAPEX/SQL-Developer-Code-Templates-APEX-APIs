@@ -14,7 +14,7 @@ If you use Oracle Application Express (APEX) APIs reference on SQL Developer, yo
 
 ## To Configure It
 
-1. Download the **CodeTemplate.xml** that matches your current version of Oracle APEX (right now, only 18.2 is available).
+1. Download the **CodeTemplate.xml** that matches your current version of Oracle APEX.
 2. On Windows, navigate to C:\Users\\\<*USER*>\AppData\Roaming\SQL Developer:
     * If you *do not* have any previous Code Template defined, simply replace the existing **CodeTemplate.xml** file.
     * If you *do* have Code Templates defined, copy everything between the \<rows>\</rows> tags on this **CodeTemplate.xml** file and paste it at the end of your existing file, right before the closing \</rows> tag.
