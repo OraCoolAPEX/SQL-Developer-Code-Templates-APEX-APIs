@@ -12,6 +12,13 @@ If you use Oracle Application Express (APEX) APIs reference on SQL Developer, yo
 2. To navigate through the parameters, use `Tab` to move forward or `Shift + Tab` to move backwards.
 3. Some parameters are pre-populated with their default values (if any) and others display their pre-defined possible values in /\*comments\*/.
 
+## Limitations
+The real purpose of Code Templates in SQL Developer is to create shortcuts (*ii*) that can expand into larger blocks of code (*insert into table values ()*). For this reason, the are some restrictions when it comes to activating Completion Insight for Code Templates:
+
+1. Completion Insight won't show available Code Templates when activated right after a punctuation mark, such as a period (.), instead, it should be activated before, e.g. **APEX_UTIL** `Ctrl + Space` instead of **APEX_UTIL.** `Ctrl + Space` to get the correct results.
+2. Different from other code editors with code completion features such as VS Code IntelliSense, Code Templates in SQL Developer are limited in the amount of information that can be specified (i.e. Id and Template), thus there are no package procedure and function descriptions.
+3. By default, Completion Insight won't show more than 20 suggestions and, at the moment, there is no option to increase this value, which affect when displaying the available procedures and functions from a large package.
+
 ## To Configure It
 
 1. Download the **CodeTemplate.xml** that matches your current version of Oracle APEX.
